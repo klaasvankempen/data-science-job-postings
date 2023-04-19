@@ -48,8 +48,8 @@ fig1.update_layout(
     yaxis_title="Number of Job Postings",
     xaxis={"categoryorder": "total descending", "tickmode": "array", "ticklen": 10},
     showlegend=False,
-    height=600,
-    hoverlabel=dict(font=dict(size=30)),
+    height=400,
+    hoverlabel=dict(font=dict(size=15)),
 )
 fig1.update_layout(my_theme["layout"])
 
@@ -91,12 +91,12 @@ fig2.update_traces(hovertemplate="<b>Number of Job Postings:</b> %{y}")
 # Update layout
 fig2.update_layout(
     title="Top 10 Locations by Number of Jobs",
-    xaxis_title="Job Title",
+    xaxis_title="Location",
     yaxis_title="Number of Job Postings",
     xaxis={"categoryorder": "total descending", "tickmode": "array", "ticklen": 10},
     showlegend=False,
     height=600,
-    hoverlabel=dict(font=dict(size=30)),
+    hoverlabel=dict(font=dict(size=15)),
 )
 
 fig2.update_layout(my_theme["layout"])
@@ -178,7 +178,7 @@ fig3.update_layout(
     xaxis={"categoryorder": "max descending", "tickmode": "array", "ticklen": 10},
     template="plotly_white",
     height=600,
-    hoverlabel=dict(font=dict(size=30)),
+    hoverlabel=dict(font=dict(size=15)),
 )
 fig3.update_layout(
     legend={"title": {"text": "Job Site", "font": {"size": 15}}, "font": {"size": 10}}
@@ -252,7 +252,7 @@ fig5.update_layout(
     xaxis={"categoryorder": "min ascending", "tickmode": "array", "ticklen": 10},
     legend=dict(title="Work From Home"),
     height=600,
-    hoverlabel=dict(font=dict(size=30)),
+    hoverlabel=dict(font=dict(size=15)),
 )
 fig5.update_xaxes(tickangle=0)
 fig5.update_layout(my_theme["layout"], title_x=0.20)
@@ -307,7 +307,7 @@ fig6.update_layout(
     uniformtext=dict(minsize=10, mode="hide"),
     height=600,
     width=600,
-    hoverlabel=dict(font=dict(size=30)),
+    hoverlabel=dict(font=dict(size=15)),
 )
 fig6.update_layout(uniformtext=dict(minsize=12, mode="hide"))
 fig6.update_layout(my_theme["layout"], title_x=0.25)
@@ -352,7 +352,7 @@ fig7.update_traces(
 # Update the layout with a title
 fig7.update_layout(
     title="Most Common Job Titles by City",
-    hoverlabel=dict(font=dict(size=30)),
+    hoverlabel=dict(font=dict(size=15)),
     height=600,
 )
 fig7.update_layout(my_theme["layout"], title_x=0.30)
@@ -401,7 +401,7 @@ fig8.update_traces(
     + "<b>Skill:</b> %{x}"
     + "<br><b>Percentage of Jobs:</b>  %{z:.2f}%<br>"
 )
-fig8.update_layout(hoverlabel=dict(font=dict(size=15)), height=300)
+fig8.update_layout(hoverlabel=dict(font=dict(size=15)), height=500)
 fig8.update_layout(my_theme["layout"], title_x=0.30)
 fig8.layout.coloraxis.colorbar.title = {
     "text": "Percentage of Jobs <br> Requiring Skill",
