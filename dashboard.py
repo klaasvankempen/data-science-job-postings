@@ -413,7 +413,7 @@ fig8.layout.coloraxis.colorbar.tickfont = {"size": 20}
 st.set_page_config(
     page_title="Data Science Job Postings Dashboard",
     page_icon="✅",
-    layout="wide",
+    layout="centered",
 )
 
 st.markdown(
