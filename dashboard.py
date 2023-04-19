@@ -428,13 +428,11 @@ st.markdown(
 )
 
 
-space0, col1, space1 = st.columns([0.35, 1, 0.1])
-with col1:
-    st.markdown(
-        '<p class="big-font">Data Science Job Postings Dashboard</p>',
-        unsafe_allow_html=True,
+st.markdown(
+    '<p class="big-font">Data Science Job Postings Dashboard</p>',
+    unsafe_allow_html=True,
     )
-    st.text(" ")
+st.text(" ")
 st.markdown(
     """
    
@@ -520,10 +518,9 @@ with kpi3:
     st.markdown(lnk + htmlstr, unsafe_allow_html=True)
 
 ######################## Figure 1 ########################
-spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
-with col1:
-    st.markdown("***")
-    st.plotly_chart(fig1, use_container_width=True)
+
+st.markdown("***")
+st.plotly_chart(fig1, use_container_width=True)
 
 ######################## Figure 2 ########################
 spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
