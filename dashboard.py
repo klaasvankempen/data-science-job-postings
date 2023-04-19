@@ -181,11 +181,11 @@ fig3.update_layout(
     hoverlabel=dict(font=dict(size=30)),
 )
 fig3.update_layout(
-    legend={"title": {"text": "Job Site", "font": {"size": 15}}, "font": {"size": 12}}
+    legend={"title": {"text": "Job Site", "font": {"size": 12}}, "font": {"size": 10}}
 )
-fig3.update_layout(my_theme["layout"], title_x=0.37)
+fig3.update_layout(my_theme["layout"], title_x=0.5)
 
-fig3.update_xaxes(tickangle=0)
+fig3.update_xaxes(tickangle=30)
 
 ######################################## Plot 4 ########################################
 
@@ -258,8 +258,8 @@ fig5.update_xaxes(tickangle=0)
 fig5.update_layout(my_theme["layout"], title_x=0.29)
 fig5.update_layout(
     legend={
-        "title": {"text": "Work From<br>Home Job", "font": {"size": 15}},
-        "font": {"size": 12},
+        "title": {"text": "Work From<br>Home Job", "font": {"size": 12}},
+        "font": {"size": 10},
     }
 )
 ######################################## Plot 6 ########################################
