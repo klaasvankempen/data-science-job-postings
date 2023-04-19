@@ -95,7 +95,7 @@ fig2.update_layout(
     yaxis_title="Number of Job Postings",
     xaxis={"categoryorder": "total descending", "tickmode": "array", "ticklen": 10},
     showlegend=False,
-    height=600,
+    height=400,
     hoverlabel=dict(font=dict(size=15)),
 )
 
@@ -309,7 +309,7 @@ fig6.update_layout(
     width=600,
     hoverlabel=dict(font=dict(size=15)),
 )
-fig6.update_layout(uniformtext=dict(minsize=10, mode="hide"))
+fig6.update_layout(uniformtext=dict(minsize=8, mode="hide"))
 fig6.update_layout(my_theme["layout"], title_x=0.25)
 
 ######################################## Plot 7 ########################################
@@ -408,6 +408,8 @@ fig8.layout.coloraxis.colorbar.title = {
     "font": {"size": 20},
 }
 fig8.layout.coloraxis.colorbar.tickfont = {"size": 12}
+
+fig8.update_xaxes(tickangle=30)
 
 
 ######################################## Streamlit App ########################################
