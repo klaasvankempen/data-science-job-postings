@@ -298,12 +298,10 @@ fig6.update_layout(
     title="Minimum Education Required by Job Title",
     xaxis=dict(title="Job Title"),
     yaxis=dict(title="Minimum Education"),
-    uniformtext=dict(minsize=10, mode="hide"),
     height=600,
     width=600,
     hoverlabel=dict(font=dict(size=15)),
 )
-fig6.update_layout(uniformtext=dict(minsize=8, mode="hide"))
 fig6.update_layout(my_theme["layout"], title_x=0.22)
 
 ######################################## Plot 7 ########################################
@@ -409,6 +407,45 @@ fig8.layout.coloraxis.colorbar.tickfont = {"size": 12}
 
 fig8.update_xaxes(tickangle=30)
 
+######################################## Plot 9 ########################################
+company_list = ["Booz Allen Hamilton",
+"Apple",
+"Deloitte",
+"Walmart"]
+top_job_titles = df["clean_job_title"].value_counts().nlargest(5).index.tolist()
+
+df_reduce = df[df["company_name"].isin(company_list)]
+df_reduce = df_reduce[df_reduce["clean_job_title"].isin(top_job_titles)]
+
+# Group the data by job title and company
+grouped = (
+    df_reduce.groupby(["company_name", "clean_job_title"])
+    .size()
+    .reset_index(name="counts")
+)
+
+# Define a custom color scale
+colors = ["#FFA07A", "#FFC0CB", "#BA55D3", "#00BFFF", "#3CB371", "#FFD700"]
+
+# Create the sunburst plot
+fig9 = px.sunburst(
+    grouped,
+    path=["company_name", "clean_job_title"],
+    values="counts",
+    color="company_name",
+    color_discrete_sequence=colors,
+)
+
+# Update the hovertemplate
+fig9.update_traces(hovertemplate="<b>%{id} </b>" + "<br>Total Job Postings: %{value}")
+
+# Update the layout with a title and axis labels
+fig9.update_layout(
+    title="Job Postings by Company",
+    height=600,
+    width=600,
+)
+fig9.update_layout(my_theme["layout"], title_x=0.32)
 
 ######################################## Streamlit App ########################################
 
@@ -541,6 +578,11 @@ st.plotly_chart(fig7, use_container_width=True)
 st.markdown("***")
 st.plotly_chart(fig3, use_container_width=True)
 
+######################## Figure 9 ########################
+
+st.markdown("***")
+st.plotly_chart(fig9, use_container_width=True)
+
 ######################## Figure 5 ########################
 
 st.markdown("***")
@@ -555,6 +597,20 @@ st.plotly_chart(fig6, use_container_width=True)
 ######################## Figure 9 ########################
 img = Image.open("word_cloud.png")
 st.markdown("***")
+st.markdown(
+    """
+<style>
+.big-font {
+    font-size:25px !important;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+st.markdown(
+    '<center><p class="big-font"><b>Word Cloud of Required Qualifications</b></p></center>',
+    unsafe_allow_html=True,
+)
 st.image(img, caption = "Word Cloud of Required Qualifications")
 
 ######################## Figure 8 ########################
