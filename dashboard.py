@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 
 # Import Data
-df = pd.read_csv("./data/cleaned.csv")
+df = pd.read_csv("./cleaned.csv")
 df = df.drop("Unnamed: 0", axis=1)
 
 ######################################## Plot 1 ########################################
