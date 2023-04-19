@@ -407,27 +407,7 @@ fig8.layout.coloraxis.colorbar.title = {
 }
 fig8.layout.coloraxis.colorbar.tickfont = {"size": 20}
 
-######################################## Plot 9 ########################################
 
-
-# concatenate all the text in the column into a single string
-df["Qualifications"][df["Qualifications"] != df["Qualifications"]] = ""
-text = ' '.join(df['Qualifications'].values.tolist())
-
-# create a set of stopwords to exclude from the word cloud
-stopwords = set(STOPWORDS)
-
-# create a WordCloud object with the stopwords set and other parameters
-wordcloud = WordCloud(width=800, height=600, background_color='white', stopwords=stopwords, colormap = "Paired")
-
-# generate the word cloud from the text
-wordcloud.generate(text)
-
-# visualize the word cloud
-fig9 = plt.figure(figsize=(8, 8), facecolor=None)
-plt.imshow(wordcloud)
-plt.axis('off')
-plt.tight_layout(pad=0)
 ######################################## Streamlit App ########################################
 
 st.set_page_config(
@@ -579,12 +559,6 @@ spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
 with col1:
     st.markdown("***")
     st.plotly_chart(fig6, use_container_width=True)
-
-######################## Figure 9 ########################
-spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
-with col1:
-    st.markdown("***")
-    st.pyplot(fig9, use_container_width=True)
 
 ######################## Figure 8 ########################
 spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
