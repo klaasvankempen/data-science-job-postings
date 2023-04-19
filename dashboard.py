@@ -181,9 +181,9 @@ fig3.update_layout(
     hoverlabel=dict(font=dict(size=30)),
 )
 fig3.update_layout(
-    legend={"title": {"text": "Job Site", "font": {"size": 10}}, "font": {"size": 10}}
+    legend={"title": {"text": "Job Site", "font": {"size": 15}}, "font": {"size": 10}}
 )
-fig3.update_layout(my_theme["layout"], title_x=0.26)
+fig3.update_layout(my_theme["layout"], title_x=0.29)
 
 fig3.update_xaxes(tickangle=30)
 
@@ -529,7 +529,7 @@ st.plotly_chart(fig2, use_container_width=True)
 
 
 st.markdown("***")
-st_folium(m, width=1400, height = 500)
+st_folium(m, width=1400, height = 400)
 
 ######################## Figure 7 ########################
 
