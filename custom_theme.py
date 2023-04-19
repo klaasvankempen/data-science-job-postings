@@ -2,7 +2,7 @@ my_theme = {
     'layout': {
         'title': {
             'font': {
-                'size': 30,
+                'size': 15,
                 'family': 'Arial'
             },
             'x': 0.35 
@@ -10,12 +10,12 @@ my_theme = {
         'xaxis': {
             'title': {
                 'font': {
-                    'size': 30,
+                    'size': 15,
                     'family': 'Arial'
                 }
             },
             'tickfont': {
-                'size': 25,
+                'size': 15,
                 'family': 'Arial'
             },
             'linewidth': 2,
@@ -24,12 +24,12 @@ my_theme = {
         'yaxis': {
             'title': {
                 'font': {
-                    'size': 30,
+                    'size': 15,
                     'family': 'Arial'
                 }
             },
             'tickfont': {
-                'size': 25,
+                'size': 15,
                 'family': 'Arial'
             },
             'linewidth': 2,
@@ -37,7 +37,7 @@ my_theme = {
         },
         'legend': {
             'font': {
-                'size': 25,
+                'size': 15,
                 'family': 'Arial'
             }
         },
