@@ -5,7 +5,7 @@ my_theme = {
                 'size': 20,
                 'family': 'Arial'
             },
-            'x': 0.28
+            'x': 0.3
         },
         'xaxis': {
             'title': {
