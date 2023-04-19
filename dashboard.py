@@ -48,7 +48,7 @@ fig1.update_layout(
     yaxis_title="Number of Job Postings",
     xaxis={"categoryorder": "total descending", "tickmode": "array", "ticklen": 10},
     showlegend=False,
-    height=700,
+    height=600,
     hoverlabel=dict(font=dict(size=30)),
 )
 fig1.update_layout(my_theme["layout"])
@@ -95,7 +95,7 @@ fig2.update_layout(
     yaxis_title="Number of Job Postings",
     xaxis={"categoryorder": "total descending", "tickmode": "array", "ticklen": 10},
     showlegend=False,
-    height=900,
+    height=600,
     hoverlabel=dict(font=dict(size=30)),
 )
 
@@ -177,7 +177,7 @@ fig3.update_layout(
     barmode="stack",
     xaxis={"categoryorder": "max descending", "tickmode": "array", "ticklen": 10},
     template="plotly_white",
-    height=900,
+    height=600,
     hoverlabel=dict(font=dict(size=30)),
 )
 fig3.update_layout(
@@ -251,7 +251,7 @@ fig5.update_layout(
     barmode="stack",
     xaxis={"categoryorder": "min ascending", "tickmode": "array", "ticklen": 10},
     legend=dict(title="Work From Home"),
-    height=900,
+    height=600,
     hoverlabel=dict(font=dict(size=30)),
 )
 fig5.update_xaxes(tickangle=0)
@@ -303,8 +303,8 @@ fig6.update_layout(
     xaxis=dict(title="Job Title"),
     yaxis=dict(title="Minimum Education"),
     uniformtext=dict(minsize=10, mode="hide"),
-    height=1200,
-    width=1200,
+    height=600,
+    width=600,
     hoverlabel=dict(font=dict(size=30)),
 )
 fig6.update_layout(uniformtext=dict(minsize=18, mode="hide"))
@@ -351,7 +351,7 @@ fig7.update_traces(
 fig7.update_layout(
     title="Most Common Job Titles by City",
     hoverlabel=dict(font=dict(size=30)),
-    height=1200,
+    height=600,
 )
 fig7.update_layout(my_theme["layout"], title_x=0.32)
 fig7.update_layout(uniformtext=dict(minsize=15, mode="hide"))
@@ -399,7 +399,7 @@ fig8.update_traces(
     + "<b>Skill:</b> %{x}"
     + "<br><b>Percentage of Jobs:</b>  %{z:.2f}%<br>"
 )
-fig8.update_layout(hoverlabel=dict(font=dict(size=30)), height=800)
+fig8.update_layout(hoverlabel=dict(font=dict(size=30)), height=600)
 fig8.update_layout(my_theme["layout"], title_x=0.4)
 fig8.layout.coloraxis.colorbar.title = {
     "text": "Percentage of Jobs <br> Requiring Skill",
