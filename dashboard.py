@@ -600,7 +600,7 @@ st.markdown("***")
 st.markdown(
     """
 <style>
-.big-font {
+.small-font {
     font-size:25px !important;
 }
 </style>
@@ -608,7 +608,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 st.markdown(
-    '<center><p class="big-font"><b>Word Cloud of Required Qualifications</b></p></center>',
+    '<center><p class="small-font"><b>Word Cloud of Required Qualifications</b></p></center>',
     unsafe_allow_html=True,
 )
 st.image(img, caption = "Word Cloud of Required Qualifications")
