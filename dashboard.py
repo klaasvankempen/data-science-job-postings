@@ -183,7 +183,7 @@ fig3.update_layout(
 fig3.update_layout(
     legend={"title": {"text": "Job Site", "font": {"size": 12}}, "font": {"size": 10}}
 )
-fig3.update_layout(my_theme["layout"], title_x=0.5)
+fig3.update_layout(my_theme["layout"], title_x=0.23)
 
 fig3.update_xaxes(tickangle=30)
 
@@ -255,13 +255,15 @@ fig5.update_layout(
     hoverlabel=dict(font=dict(size=30)),
 )
 fig5.update_xaxes(tickangle=0)
-fig5.update_layout(my_theme["layout"], title_x=0.29)
+fig5.update_layout(my_theme["layout"], title_x=0.23)
 fig5.update_layout(
     legend={
         "title": {"text": "Work From<br>Home Job", "font": {"size": 12}},
         "font": {"size": 10},
     }
 )
+fig5.update_xaxes(tickangle=30)
+
 ######################################## Plot 6 ########################################
 
 # Convert the minimum_education column to a categorical data type
@@ -399,7 +401,7 @@ fig8.update_traces(
     + "<b>Skill:</b> %{x}"
     + "<br><b>Percentage of Jobs:</b>  %{z:.2f}%<br>"
 )
-fig8.update_layout(hoverlabel=dict(font=dict(size=30)), height=600)
+fig8.update_layout(hoverlabel=dict(font=dict(size=15)), height=900)
 fig8.update_layout(my_theme["layout"], title_x=0.4)
 fig8.layout.coloraxis.colorbar.title = {
     "text": "Percentage of Jobs <br> Requiring Skill",
