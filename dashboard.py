@@ -435,8 +435,6 @@ st.markdown(
 st.text(" ")
 st.markdown(
     """
-   
-    
     """
 )
 
@@ -451,7 +449,7 @@ j = 425
 k = 160
 
 # create three columns
-kpi1, kpi2, kpi3= st.columns([1, 1, 1])
+kpi1, kpi2, kpi3= st.columns(3)
 
 
 # fill in those three columns with respective metrics or KPIs
@@ -465,7 +463,7 @@ with kpi1:
                                    {wch_colour_font[2]}, 0.75); 
                         font-size: {fontsize}px; 
                         border-radius: 7px; 
-                        padding-left: 12px; 
+                        padding-left: 2px; 
                         padding-top: 18px; 
                         padding-bottom: 18px; 
                         line-height:25px;'>
