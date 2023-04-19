@@ -11,7 +11,7 @@ from custom_theme import my_theme
 from streamlit_folium import st_folium
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
-
+from PIL import Image
 
 # Import Data
 df = pd.read_csv("./cleaned.csv")
@@ -550,6 +550,12 @@ st.plotly_chart(fig5, use_container_width=True)
 
 st.markdown("***")
 st.plotly_chart(fig6, use_container_width=True)
+
+
+######################## Figure 9 ########################
+img = Image.open("word_cloud.png")
+st.markdown("***")
+st.image(img, caption = "Word Cloud of Required Qualifications")
 
 ######################## Figure 8 ########################
 
