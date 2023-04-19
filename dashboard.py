@@ -402,7 +402,7 @@ fig8.update_traces(
     + "<br><b>Percentage of Jobs:</b>  %{z:.2f}%<br>"
 )
 fig8.update_layout(hoverlabel=dict(font=dict(size=15)), height=500)
-fig8.update_layout(my_theme["layout"], title_x=0.30, yaxes_title = dict(font = dict(size = 10)
+fig8.update_layout(my_theme["layout"], title_x=0.30, yaxes_title = dict(font = dict(size = 10)))
 fig8.layout.coloraxis.colorbar.title = {
     "text": "Percentage of Jobs <br> Requiring Skill",
     "font": {"size": 20},
