@@ -309,7 +309,7 @@ fig6.update_layout(
     width=600,
     hoverlabel=dict(font=dict(size=15)),
 )
-fig6.update_layout(uniformtext=dict(minsize=12, mode="hide"))
+fig6.update_layout(uniformtext=dict(minsize=10, mode="hide"))
 fig6.update_layout(my_theme["layout"], title_x=0.25)
 
 ######################################## Plot 7 ########################################
