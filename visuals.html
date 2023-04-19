@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>visuals</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="visuals_files/libs/clipboard/clipboard.min.js"></script>
+<script src="visuals_files/libs/quarto-html/quarto.js"></script>
+<script src="visuals_files/libs/quarto-html/popper.min.js"></script>
+<script src="visuals_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="visuals_files/libs/quarto-html/anchor.min.js"></script>
+<link href="visuals_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="visuals_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="visuals_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="visuals_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="visuals_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+        <script type="text/javascript">
+        window.PlotlyConfig = {MathJaxConfig: 'local'};
+        if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+        if (typeof require !== 'undefined') {
+        require.undef("plotly");
+        requirejs.config({
+            paths: {
+                'plotly': ['https://cdn.plot.ly/plotly-2.20.0.min']
+            }
+        });
+        require(['plotly'], function(Plotly) {
+            window._Plotly = Plotly;
+        });
+        }
+        </script>
+        
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> folium</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> geopy.geocoders <span class="im">import</span> Nominatim</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> folium.plugins <span class="im">import</span> HeatMap</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotly.subplots <span class="im">import</span> make_subplots</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"./data/cleaned.csv"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.drop(<span class="st">"Unnamed: 0"</span>, axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="number-of-jobs-597" class="level3">
+<h3 class="anchored" data-anchor-id="number-of-jobs-597">Number of Jobs: 597</h3>
+</section>
+<section id="number-of-companies-425" class="level3">
+<h3 class="anchored" data-anchor-id="number-of-companies-425">Number of Companies: 425</h3>
+</section>
+<section id="number-of-cities-160" class="level3">
+<h3 class="anchored" data-anchor-id="number-of-cities-160">Number of Cities: 160</h3>
+</section>
+<section id="most-common-jobs-titles" class="level1">
+<h1>Most Common Jobs Titles</h1>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute top 5 job titles</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>top_job_titles <span class="op">=</span> df[<span class="st">"clean_job_title"</span>].value_counts().nlargest(<span class="dv">5</span>).index.tolist()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter data to include only top 5 job titles</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>df_top_jobs <span class="op">=</span> df[df[<span class="st">"clean_job_title"</span>].isin(top_job_titles)]</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom color palette</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">"#FFA07A"</span>, <span class="st">"#FFC0CB"</span>, <span class="st">"#BA55D3"</span>, <span class="st">"#00BFFF"</span>, <span class="st">"#3CB371"</span>, <span class="st">"#FFD700"</span>]</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Create bar graph</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.histogram(</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    df_top_jobs,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"clean_job_title"</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">"clean_job_title"</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    color_discrete_sequence<span class="op">=</span>colors,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>{<span class="st">"count"</span>: <span class="st">"Number of Job Postings"</span>},</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    hover_data<span class="op">=</span>{<span class="st">"clean_job_title"</span>: <span class="va">False</span>},</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    template<span class="op">=</span><span class="st">"plotly_white"</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>fig.update_traces(hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;Number of Job Postings:&lt;/b&gt; %</span><span class="sc">{y}</span><span class="st">"</span>)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Update layout</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Top 6 Job Titles by Number of Postings"</span>,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">"Job Title"</span>,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">"Number of Job Postings"</span>,</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span>{<span class="st">"categoryorder"</span>: <span class="st">"total descending"</span>, <span class="st">"tickmode"</span>: <span class="st">"array"</span>, <span class="st">"ticklen"</span>: <span class="dv">10</span>},</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Show plot</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="653a8f56-c6e5-45b1-aa1c-72ab26c4aa2b" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("653a8f56-c6e5-45b1-aa1c-72ab26c4aa2b")) {                    Plotly.newPlot(                        "653a8f56-c6e5-45b1-aa1c-72ab26c4aa2b",                        [{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Blockchain Engineer","marker":{"color":"#FFA07A","pattern":{"shape":""}},"name":"Blockchain Engineer","offsetgroup":"Blockchain Engineer","orientation":"v","showlegend":true,"x":["Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer","Blockchain Engineer"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Data Scientist","marker":{"color":"#FFC0CB","pattern":{"shape":""}},"name":"Data Scientist","offsetgroup":"Data Scientist","orientation":"v","showlegend":true,"x":["Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist","Data Scientist"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Deep Learning Engineer","marker":{"color":"#BA55D3","pattern":{"shape":""}},"name":"Deep Learning Engineer","offsetgroup":"Deep Learning Engineer","orientation":"v","showlegend":true,"x":["Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer","Deep Learning Engineer"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Machine Learning Engineer","marker":{"color":"#00BFFF","pattern":{"shape":""}},"name":"Machine Learning Engineer","offsetgroup":"Machine Learning Engineer","orientation":"v","showlegend":true,"x":["Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Data Analyst","marker":{"color":"#3CB371","pattern":{"shape":""}},"name":"Data Analyst","offsetgroup":"Data Analyst","orientation":"v","showlegend":true,"x":["Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst","Data Analyst"],"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Job Title"},"categoryorder":"total descending","categoryarray":["Blockchain Engineer","Data Scientist","Deep Learning Engineer","Machine Learning Engineer","Data Analyst"],"tickmode":"array","ticklen":10},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Number of Job Postings"}},"legend":{"title":{"text":"clean_job_title"},"tracegroupgap":0},"margin":{"t":60},"barmode":"relative","title":{"text":"Top 6 Job Titles by Number of Postings"},"showlegend":false},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('653a8f56-c6e5-45b1-aa1c-72ab26c4aa2b');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<section id="where-are-most-jobs-located" class="level2">
+<h2 class="anchored" data-anchor-id="where-are-most-jobs-located">Where are most jobs Located</h2>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute top 5 job titles</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df_reduce <span class="op">=</span> df[df[<span class="st">"location"</span>] <span class="op">!=</span> <span class="st">"United States"</span>]</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>top_locations <span class="op">=</span> df_reduce[<span class="st">"location"</span>].value_counts().nlargest(<span class="dv">10</span>).index.tolist()</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter data to include only top 5 job titles</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>df_top_locations <span class="op">=</span> df[df[<span class="st">"location"</span>].isin(top_locations)]</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom color palette</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#FFA07A"</span>,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#FFC0CB"</span>,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#BA55D3"</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#00BFFF"</span>,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#3CB371"</span>,</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#FFD700"</span>,</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#FF1493"</span>,</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#9370DB"</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#20B2AA"</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#F08080"</span>,</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Create bar graph</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.histogram(</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    df_top_locations,</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"location"</span>,</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">"location"</span>,</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    color_discrete_sequence<span class="op">=</span>colors,</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>{<span class="st">"count"</span>: <span class="st">"Number of Job Postings"</span>},</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    hover_data<span class="op">=</span>{<span class="st">"location"</span>: <span class="va">False</span>},</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    template <span class="op">=</span> <span class="st">"plotly_white"</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>fig.update_traces(hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;Number of Job Postings:&lt;/b&gt; %</span><span class="sc">{y}</span><span class="st">"</span>)</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Update layout</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Top 10 Locations by Number of Postings"</span>,</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">"Job Title"</span>,</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">"Number of Job Postings"</span>,</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span>{<span class="st">"categoryorder"</span>: <span class="st">"total descending"</span>, <span class="st">"tickmode"</span>: <span class="st">"array"</span>, <span class="st">"ticklen"</span>: <span class="dv">10</span>},</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Show plot</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="6c84a82a-78ef-4ab2-84d0-014ebbbb3d6f" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("6c84a82a-78ef-4ab2-84d0-014ebbbb3d6f")) {                    Plotly.newPlot(                        "6c84a82a-78ef-4ab2-84d0-014ebbbb3d6f",                        [{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"New York, NY","marker":{"color":"#FFA07A","pattern":{"shape":""}},"name":"New York, NY","offsetgroup":"New York, NY","orientation":"v","showlegend":true,"x":["New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY","New York, NY"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Chicago, IL","marker":{"color":"#FFC0CB","pattern":{"shape":""}},"name":"Chicago, IL","offsetgroup":"Chicago, IL","orientation":"v","showlegend":true,"x":["Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL","Chicago, IL"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Seattle, WA","marker":{"color":"#BA55D3","pattern":{"shape":""}},"name":"Seattle, WA","offsetgroup":"Seattle, WA","orientation":"v","showlegend":true,"x":["Seattle, WA","Seattle, WA","Seattle, WA","Seattle, WA","Seattle, WA","Seattle, WA","Seattle, WA","Seattle, WA","Seattle, WA","Seattle, WA"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"San Francisco, CA","marker":{"color":"#00BFFF","pattern":{"shape":""}},"name":"San Francisco, CA","offsetgroup":"San Francisco, CA","orientation":"v","showlegend":true,"x":["San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA","San Francisco, CA"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Palo Alto, CA","marker":{"color":"#3CB371","pattern":{"shape":""}},"name":"Palo Alto, CA","offsetgroup":"Palo Alto, CA","orientation":"v","showlegend":true,"x":["Palo Alto, CA","Palo Alto, CA","Palo Alto, CA","Palo Alto, CA","Palo Alto, CA","Palo Alto, CA","Palo Alto, CA","Palo Alto, CA"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Annapolis Junction, MD","marker":{"color":"#FFD700","pattern":{"shape":""}},"name":"Annapolis Junction, MD","offsetgroup":"Annapolis Junction, MD","orientation":"v","showlegend":true,"x":["Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD","Annapolis Junction, MD"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Arlington, VA","marker":{"color":"#FF1493","pattern":{"shape":""}},"name":"Arlington, VA","offsetgroup":"Arlington, VA","orientation":"v","showlegend":true,"x":["Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA","Arlington, VA"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Washington, DC","marker":{"color":"#9370DB","pattern":{"shape":""}},"name":"Washington, DC","offsetgroup":"Washington, DC","orientation":"v","showlegend":true,"x":["Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC","Washington, DC"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"Herndon, VA","marker":{"color":"#20B2AA","pattern":{"shape":""}},"name":"Herndon, VA","offsetgroup":"Herndon, VA","orientation":"v","showlegend":true,"x":["Herndon, VA","Herndon, VA","Herndon, VA","Herndon, VA","Herndon, VA","Herndon, VA","Herndon, VA","Herndon, VA","Herndon, VA","Herndon, VA","Herndon, VA"],"xaxis":"x","yaxis":"y","type":"histogram"},{"alignmentgroup":"True","bingroup":"x","hovertemplate":"<b>Number of Job Postings:</b> %{y}","legendgroup":"McLean, VA","marker":{"color":"#F08080","pattern":{"shape":""}},"name":"McLean, VA","offsetgroup":"McLean, VA","orientation":"v","showlegend":true,"x":["McLean, VA","McLean, VA","McLean, VA","McLean, VA","McLean, VA","McLean, VA","McLean, VA","McLean, VA","McLean, VA"],"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Job Title"},"categoryorder":"total descending","categoryarray":["New York, NY","Chicago, IL","Seattle, WA","San Francisco, CA","Palo Alto, CA","Annapolis Junction, MD","Arlington, VA","Washington, DC","Herndon, VA","McLean, VA"],"tickmode":"array","ticklen":10},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Number of Job Postings"}},"legend":{"title":{"text":"location"},"tracegroupgap":0},"margin":{"t":60},"barmode":"relative","title":{"text":"Top 10 Locations by Number of Postings"},"showlegend":false},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('6c84a82a-78ef-4ab2-84d0-014ebbbb3d6f');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute top 5 job titles</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>top_job_titles <span class="op">=</span> df[<span class="st">"clean_job_title"</span>].value_counts().nlargest(<span class="dv">5</span>).index.tolist()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter data to include only top 5 job titles</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>df_top_jobs <span class="op">=</span> df[df[<span class="st">"clean_job_title"</span>].isin(top_job_titles)]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute top 5 job posting sites</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>top_sites <span class="op">=</span> df[<span class="st">"via"</span>].value_counts().nlargest(<span class="dv">5</span>).index.tolist()</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter data to include only top 5 job titles</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>df_top_jobs <span class="op">=</span> df_top_jobs[df_top_jobs[<span class="st">"via"</span>].isin(top_sites)]</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute percentages of work from home for each job title</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>job_title_percents <span class="op">=</span> (</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    df_top_jobs.groupby([<span class="st">"clean_job_title"</span>, <span class="st">"via"</span>])[<span class="st">"via"</span>]</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    .count()</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    .groupby(level<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="dv">100</span> <span class="op">*</span> x <span class="op">/</span> x.<span class="bu">sum</span>())</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    .unstack()</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">"#FFA07A"</span>, <span class="st">"#FFC0CB"</span>, <span class="st">"#BA55D3"</span>, <span class="st">"#00BFFF"</span>, <span class="st">"#3CB371"</span>, <span class="st">"#FFD700"</span>]</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>job_title_percents.fillna(<span class="dv">0</span>)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Create stacked bar chart</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure(</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>[</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>        go.Bar(</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>            name<span class="op">=</span><span class="st">"Angel List"</span>,</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>            x<span class="op">=</span>top_job_titles,</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>            y<span class="op">=</span>job_title_percents[<span class="st">"via AngelList"</span>],</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>            marker_color<span class="op">=</span>colors[<span class="dv">0</span>],</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>            hovertemplate<span class="op">=</span><span class="st">"Percentage: %</span><span class="sc">{y:.1f}</span><span class="st">%"</span>,</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>        go.Bar(</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>            name<span class="op">=</span><span class="st">"Level"</span>,</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>            x<span class="op">=</span>top_job_titles,</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>            y<span class="op">=</span>job_title_percents[<span class="st">"via Lever"</span>],</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>            marker_color<span class="op">=</span>colors[<span class="dv">1</span>],</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>            hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;Percentage:&lt;/b&gt; %</span><span class="sc">{y:.1f}</span><span class="st">%"</span>,</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>        go.Bar(</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>            name<span class="op">=</span><span class="st">"LinkedIn"</span>,</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>            x<span class="op">=</span>top_job_titles,</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>            y<span class="op">=</span>job_title_percents[<span class="st">"via LinkedIn"</span>],</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>            marker_color<span class="op">=</span>colors[<span class="dv">2</span>],</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>            hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;Percentage:&lt;/b&gt; %</span><span class="sc">{y:.1f}</span><span class="st">%"</span>,</span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>        go.Bar(</span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>            name<span class="op">=</span><span class="st">"Upwork"</span>,</span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>            x<span class="op">=</span>top_job_titles,</span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>            y<span class="op">=</span>job_title_percents[<span class="st">"via Upwork"</span>],</span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>            marker_color<span class="op">=</span>colors[<span class="dv">3</span>],</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>            hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;Percentage:&lt;/b&gt; %</span><span class="sc">{y:.1f}</span><span class="st">%"</span>,</span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>        go.Bar(</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>            name<span class="op">=</span><span class="st">"ZipRecruiter"</span>,</span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>            x<span class="op">=</span>top_job_titles,</span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>            y<span class="op">=</span>job_title_percents[<span class="st">"via ZipRecruiter"</span>],</span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>            marker_color<span class="op">=</span>colors[<span class="dv">4</span>],</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>            hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;Percentage:&lt;/b&gt; %</span><span class="sc">{y:.1f}</span><span class="st">%"</span>,</span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a><span class="co"># Update layout</span></span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Job Postings by Site"</span>,</span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">"Job Title"</span>,</span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">"Percent of Job Postings"</span>,</span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">"stack"</span>,</span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span>{<span class="st">"categoryorder"</span>: <span class="st">"max descending"</span>, <span class="st">"tickmode"</span>: <span class="st">"array"</span>, <span class="st">"ticklen"</span>: <span class="dv">10</span>},</span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Job Site"</span>),</span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>    template <span class="op">=</span> <span class="st">"plotly_white"</span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(tickangle<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="co"># Show plot</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/var/folders/m0/y_433zr10m79zw6c3ccqn31c0000gn/T/ipykernel_33027/2741582061.py:19: FutureWarning:
+
+Not prepending group keys to the result index of transform-like apply. In the future, the group keys will be included in the index, regardless of whether the applied function returns a like-indexed object.
+To preserve the previous behavior, use
+
+    &gt;&gt;&gt; .groupby(..., group_keys=False)
+
+To adopt the future behavior and silence this warning, use 
+
+    &gt;&gt;&gt; .groupby(..., group_keys=True)
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="6c3e66eb-fa48-48be-8e8c-6dcd8f324dd8" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("6c3e66eb-fa48-48be-8e8c-6dcd8f324dd8")) {                    Plotly.newPlot(                        "6c3e66eb-fa48-48be-8e8c-6dcd8f324dd8",                        [{"hovertemplate":"Percentage: %{y:.1f}%","marker":{"color":"#FFA07A"},"name":"Angel List","x":["Machine Learning Engineer","Data Scientist","Data Analyst","Deep Learning Engineer","Blockchain Engineer"],"y":[75.0,null,null,30.0,30.303030303030305],"type":"bar"},{"hovertemplate":"<b>Percentage:</b> %{y:.1f}%","marker":{"color":"#FFC0CB"},"name":"Level","x":["Machine Learning Engineer","Data Scientist","Data Analyst","Deep Learning Engineer","Blockchain Engineer"],"y":[null,18.51851851851852,6.666666666666667,null,15.151515151515152],"type":"bar"},{"hovertemplate":"<b>Percentage:</b> %{y:.1f}%","marker":{"color":"#BA55D3"},"name":"LinkedIn","x":["Machine Learning Engineer","Data Scientist","Data Analyst","Deep Learning Engineer","Blockchain Engineer"],"y":[null,48.148148148148145,46.666666666666664,40.0,27.272727272727273],"type":"bar"},{"hovertemplate":"<b>Percentage:</b> %{y:.1f}%","marker":{"color":"#00BFFF"},"name":"Upwork","x":["Machine Learning Engineer","Data Scientist","Data Analyst","Deep Learning Engineer","Blockchain Engineer"],"y":[null,3.7037037037037037,null,10.0,9.090909090909092],"type":"bar"},{"hovertemplate":"<b>Percentage:</b> %{y:.1f}%","marker":{"color":"#3CB371"},"name":"ZipRecruiter","x":["Machine Learning Engineer","Data Scientist","Data Analyst","Deep Learning Engineer","Blockchain Engineer"],"y":[25.0,29.62962962962963,46.666666666666664,20.0,18.181818181818183],"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"title":{"text":"Job Title"},"categoryorder":"max descending","tickmode":"array","ticklen":10,"tickangle":0},"title":{"text":"Job Postings by Site"},"yaxis":{"title":{"text":"Percent of Job Postings"}},"barmode":"stack","legend":{"title":{"text":"Job Site"}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('6c3e66eb-fa48-48be-8e8c-6dcd8f324dd8');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_reduce <span class="op">=</span> df[df[<span class="st">"location"</span>] <span class="op">!=</span> <span class="st">"United States"</span>]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df_reduce <span class="op">=</span> df_reduce.dropna(subset<span class="op">=</span>[<span class="st">"location_coord"</span>])</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert string coordinates to floats</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>heat_data <span class="op">=</span> [<span class="bu">eval</span>(coord) <span class="cf">for</span> coord <span class="kw">in</span> df_reduce[<span class="st">"location_coord"</span>]]</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a Folium map centered on the US</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> folium.Map(location<span class="op">=</span>[<span class="dv">40</span>, <span class="op">-</span><span class="dv">95</span>], zoom_start<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Add heatmap layer</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>HeatMap(heat_data, radius<span class="op">=</span><span class="dv">15</span>).add_to(m)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Display map</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;></script>
+    <script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;></script>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;></script>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/>
+    
+            <meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
+            <style>
+                #map_1db4e624f4b324eaf027746fe59959ca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js&quot;></script>
+</head>
+<body>
+    
+    
+            <div class=&quot;folium-map&quot; id=&quot;map_1db4e624f4b324eaf027746fe59959ca&quot; ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1db4e624f4b324eaf027746fe59959ca = L.map(
+                &quot;map_1db4e624f4b324eaf027746fe59959ca&quot;,
+                {
+                    center: [40.0, -95.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_80c0ef098d6b950de3a09cd87ba48284 = L.tileLayer(
+                &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            ).addTo(map_1db4e624f4b324eaf027746fe59959ca);
+        
+    
+            var heat_map_c2f34a69ef0274dea1cc264c00c3af0e = L.heatLayer(
+                [[40.7127281, -74.0060152], [34.0536909, -118.242766], [37.6820583, -121.768053], [40.7127281, -74.0060152], [32.8295183, -96.9442177], [40.2101972, -77.0047276], [40.7127281, -74.0060152], [31.2638905, -98.5456116], [43.0349931, -87.922497], [32.8295183, -96.9442177], [32.7762719, -96.7968559], [41.8755616, -87.6244212], [38.8339578, -104.825348], [38.9813699, -77.0849245], [40.7127281, -74.0060152], [40.7127281, -74.0060152], [37.9689254, -92.5921247], [37.3228934, -122.0322895], [42.4473175, -71.2245003], [47.6038321, -122.330062], [37.7790262, -122.419906], [38.8950368, -77.0365427], [31.2638905, -98.5456116], [42.3756401, -71.2358004], [47.6694141, -122.1238767], [42.5750939, -71.0786653], [37.4443293, -122.1598465], [37.4332273, -121.8989248], [37.4332273, -121.8989248], [39.0197327, -76.59026765175719], [42.3554334, -71.060511], [37.496904, -122.3330573], [39.5162401, -76.9382069], [39.125459649999996, -76.795323688298], [38.9786401, -76.492786], [37.7790262, -122.419906], [39.26099215, -76.74554777654639], [39.125459649999996, -76.795323688298], [39.1938429, -76.86460919353361], [38.8838856, -94.81887], [36.3728538, -94.2088172], [38.7604815, -92.5617875], [36.3320197, -94.1185366], [40.266429, -96.747369], [37.4863239, -122.232523], [39.1044123, -76.8669233], [33.0136764, -96.6925096], [36.0103562, -84.2696449], [37.7790262, -122.419906], [47.6038321, -122.330062], [37.9093702, -122.6863733], [37.3228934, -122.0322895], [40.7127281, -74.0060152], [42.3554334, -71.060511], [37.7790262, -122.419906], [37.7790262, -122.419906], [36.3728538, -94.2088172], [35.4729886, -97.5170536], [35.4729886, -97.5170536], [39.26099215, -76.74554777654639], [37.226611, -121.9746797], [37.0586882, -95.713312], [40.7127281, -74.0060152], [39.125459649999996, -76.795323688298], [39.125459649999996, -76.795323688298], [39.1928853, -76.7241371], [39.125459649999996, -76.795323688298], [39.103197949999995, -76.74651732045955], [36.0103562, -84.2696449], [37.6535403, -122.4168664], [38.8769326, -77.0893094], [37.6535403, -122.4168664], [39.103197949999995, -76.74651732045955], [42.2681569, -83.7312291], [32.7174202, -117.1627728], [32.7762719, -96.7968559], [47.6694141, -122.1238767], [40.7127281, -74.0060152], [40.7127281, -74.0060152], [47.6038321, -122.330062], [25.7741728, -80.19362], [37.3688301, -122.036349], [37.7790262, -122.419906], [37.6820583, -121.768053], [37.8708393, -122.272863], [36.0103562, -84.2696449], [40.7127281, -74.0060152], [39.613321, -105.016649], [33.7489924, -84.3902644], [37.4443293, -122.1598465], [38.9997621, -77.02403709829767], [42.3554334, -71.060511], [47.6038321, -122.330062], [33.9934867, -81.0739826], [37.2333253, -121.6846349], [37.496904, -122.3330573], [37.3361663, -121.890591], [37.4443293, -122.1598465], [37.3361663, -121.890591], [42.2836393, -71.346996], [40.2205944, -74.7597219], [43.074761, -89.3837613], [41.4789246, -87.4547605], [29.7589382, -95.3676974], [38.8339578, -104.825348], [32.8295183, -96.9442177], [41.8755616, -87.6244212], [30.2711286, -97.7436995], [44.9497487, -93.0931028], [35.4729886, -97.5170536], [41.8755616, -87.6244212], [39.6892129, -86.5224984], [42.2694308, -71.6129907], [37.6535403, -122.4168664], [34.1476452, -118.1444779], [41.8755616, -87.6244212], [37.6535403, -122.4168664], [40.8860164, -74.0072568], [32.7762719, -96.7968559], [29.7946641, -98.7319703], [40.7127281, -74.0060152], [36.7282096, -76.5835703], [38.8950368, -77.0365427], [38.8950368, -77.0365427], [39.125459649999996, -76.795323688298], [37.4443293, -122.1598465], [37.7790262, -122.419906], [40.7695457, -74.0204177], [38.9786401, -76.492786], [39.125459649999996, -76.795323688298], [40.7127281, -74.0060152], [37.2333253, -121.6846349], [37.4443293, -122.1598465], [37.4519671, -122.177992], [32.5232053, -92.637927], [47.6038321, -122.330062], [40.7127281, -74.0060152], [37.7790262, -122.419906], [40.7127281, -74.0060152], [38.98127255, -77.12335871396549], [37.3228934, -122.0322895], [47.6765382, -122.2070775], [40.7127281, -74.0060152], [37.3688301, -122.036349], [37.4443293, -122.1598465], [40.7127281, -74.0060152], [33.0136764, -96.6925096], [37.7790262, -122.419906], [40.0149856, -105.270545], [38.98127255, -77.12335871396549], [32.7666103, -96.599472], [40.7127281, -74.0060152], [40.7127281, -74.0060152], [41.8755616, -87.6244212], [36.3728538, -94.2088172], [39.049011, -95.677556], [38.9697458, -94.7845837], [35.4729886, -97.5170536], [33.4484367, -112.074141], [37.7790262, -122.419906], [32.7174202, -117.1627728], [40.1164841, -88.2430932], [40.7127281, -74.0060152], [34.4147965, -80.3486166], [37.3361663, -121.890591], [33.7489924, -84.3902644], [38.8950368, -77.0365427], [37.3893889, -122.0832101], [42.3056501, -71.5245087], [40.7127281, -74.0060152], [36.3728538, -94.2088172], [43.074761, -89.3837613], [39.049011, -95.677556], [41.3975305, -90.8995898], [30.2711286, -97.7436995], [42.0447388, -87.6930459], [42.1711365, -87.8445119], [42.3554334, -71.060511], [44.9497487, -93.0931028], [35.7882893, -78.7812081], [36.7014631, -118.755997], [42.3875968, -71.0994968], [37.3228934, -122.0322895], [37.7790262, -122.419906], [37.3361663, -121.890591], [39.613321, -105.016649], [37.7790262, -122.419906], [37.5482697, -121.988571], [37.3893889, -122.0832101], [37.2333253, -121.6846349], [34.0536909, -118.242766], [38.7509488, -77.4752667], [34.0536909, -118.242766], [41.8755616, -87.6244212], [45.0761409, -93.1666945], [44.818173, -93.1659179], [42.325578, -87.8411818], [36.3728538, -94.2088172], [40.0796606, -89.4337288], [34.729847, -86.5859011], [37.4519671, -122.177992], [40.3492744, -74.6592958], [40.7127281, -74.0060152], [32.7355816, -97.1071186], [34.0536909, -118.242766], [37.7790262, -122.419906], [42.3750997, -71.1056157], [33.7489924, -84.3902644], [39.2908816, -76.610759], [37.3228934, -122.0322895], [42.3554334, -71.060511], [40.7127281, -74.0060152], [36.0103562, -84.2696449], [40.7127281, -74.0060152], [34.0536909, -118.242766], [42.3875968, -71.0994968], [40.7127281, -74.0060152], [42.3875968, -71.0994968], [34.0536909, -118.242766], [39.0836224, -84.508371], [37.3228934, -122.0322895], [37.4443293, -122.1598465], [37.7790262, -122.419906], [33.6856969, -117.8259819], [35.2272086, -80.8430827], [39.9622601, -83.0007065], [37.3893889, -122.0832101], [41.8755616, -87.6244212], [37.6624312, -121.8746789], [38.9695316, -77.3859479], [47.6038321, -122.330062], [36.7014631, -118.755997], [37.4443293, -122.1598465], [42.3750997, -71.1056157], [37.7790262, -122.419906], [42.1900249, -87.9084039], [37.3361663, -121.890591], [37.4519671, -122.177992], [41.8755616, -87.6244212], [37.8590272, -122.485469], [36.1672559, -115.148516], [40.0149856, -105.270545], [30.2711286, -97.7436995], [37.6820583, -121.768053], [41.8755616, -87.6244212], [32.7762719, -96.7968559], [37.2333253, -121.6846349], [34.0211224, -118.396466], [42.4792618, -71.1522766], [38.7604815, -92.5617875], [35.6571367, -97.4649038], [36.3728538, -94.2088172], [39.100105, -94.5781416], [39.125459649999996, -76.795323688298], [39.125459649999996, -76.795323688298], [38.955696, -77.34188283719988], [38.8788355, -77.40221718011088], [41.8755616, -87.6244212], [39.125459649999996, -76.795323688298], [39.125459649999996, -76.795323688298], [38.8950368, -77.0365427], [41.0339862, -73.7629097], [38.9786401, -76.492786], [40.7596198, -111.886797], [41.5058344, -90.5136642], [38.955696, -77.34188283719988], [39.7459468, -75.546589], [33.7489924, -84.3902644], [40.7596198, -111.886797], [40.7596198, -111.886797], [40.518157, -74.4113926], [38.8838856, -94.81887], [33.5462168, -95.7257949], [38.577359, -92.1724265], [31.2638905, -98.5456116], [37.8314089, -122.2865266], [42.3750997, -71.1056157], [42.9632405, -85.6678639], [37.3361663, -121.890591], [37.7790262, -122.419906], [35.996653, -78.9018053], [38.5810606, -121.493895], [37.496904, -122.3330573], [37.3361663, -121.890591], [41.8755616, -87.6244212], [37.3688301, -122.036349], [44.9772995, -93.2654692], [38.955696, -77.34188283719988], [39.2908816, -76.610759], [39.125459649999996, -76.795323688298], [38.8051095, -77.0470229], [38.8950368, -77.0365427], [38.8950368, -77.0365427], [38.8950368, -77.0365427], [38.8950368, -77.0365427], [38.8769326, -77.0893094], [38.8950368, -77.0365427], [38.9318369, -77.1671337963356], [38.8950368, -77.0365427], [38.98127255, -77.12335871396549], [38.98127255, -77.12335871396549], [38.8950368, -77.0365427], [38.8769326, -77.0893094], [38.980666, -76.9369189], [38.8950368, -77.0365427], [39.103197949999995, -76.74651732045955], [38.8950368, -77.0365427], [38.8769326, -77.0893094], [38.9997621, -77.02403709829767], [38.8051095, -77.0470229], [38.9318369, -77.1671337963356], [39.1044123, -76.8669233], [38.8769326, -77.0893094], [38.8769326, -77.0893094], [38.9318369, -77.1671337963356], [38.9695316, -77.3859479], [38.8950368, -77.0365427], [38.8950368, -77.0365427], [38.9813699, -77.0849245], [38.882334, -77.1710914], [38.98127255, -77.12335871396549], [38.8950368, -77.0365427], [38.8950368, -77.0365427], [38.8769326, -77.0893094], [38.8950368, -77.0365427], [38.9997621, -77.02403709829767], [38.9786401, -76.492786], [38.9695316, -77.3859479], [38.9786401, -76.492786], [38.9997621, -77.02403709829767], [38.98127255, -77.12335871396549], [38.9695316, -77.3859479], [38.8950368, -77.0365427], [38.8950368, -77.0365427], [38.8769326, -77.0893094], [38.8769326, -77.0893094], [38.8462236, -77.3063733], [39.0817985, -77.1516844], [38.955696, -77.34188283719988], [38.9695316, -77.3859479], [39.103197949999995, -76.74651732045955], [40.7127281, -74.0060152], [39.7589478, -84.1916069], [36.7014631, -118.755997], [38.9997621, -77.02403709829767], [38.8769326, -77.0893094], [38.8051095, -77.0470229], [38.9695316, -77.3859479], [38.9778882, -77.0074765], [39.04979325, -77.05228508396917], [38.9695316, -77.3859479], [38.8950368, -77.0365427], [38.72821225, -77.15098291295884], [38.8950368, -77.0365427], [38.8462236, -77.3063733], [38.955696, -77.34188283719988], [39.1938429, -76.86460919353361], [38.8769326, -77.0893094], [38.8769326, -77.0893094], [38.8051095, -77.0470229], [38.8950368, -77.0365427], [38.9013729, -77.2651762], [39.2908816, -76.610759], [38.8462236, -77.3063733], [39.003809849999996, -77.40832792370676], [39.103197949999995, -76.74651732045955], [38.9695316, -77.3859479], [39.2864787, -80.2561981], [40.7127281, -74.0060152], [42.4473175, -71.2245003], [42.3459271, -71.5522874], [38.8950368, -77.0365427], [38.8769326, -77.0893094], [38.8769326, -77.0893094], [38.8051095, -77.0470229], [38.9318369, -77.1671337963356], [37.6535403, -122.4168664], [47.6038321, -122.330062], [38.8950368, -77.0365427], [38.8950368, -77.0365427], [38.9318369, -77.1671337963356], [38.8950368, -77.0365427], [38.8950368, -77.0365427], [38.8051095, -77.0470229], [38.8051095, -77.0470229], [38.8950368, -77.0365427], [38.8769326, -77.0893094], [37.3228934, -122.0322895], [37.7790262, -122.419906], [41.8755616, -87.6244212], [47.6038321, -122.330062], [41.8755616, -87.6244212], [21.304547, -157.855676], [37.6820583, -121.768053], [37.7790262, -122.419906], [38.7767435, -77.1807019310668], [38.8462236, -77.3063733], [38.9318369, -77.1671337963356], [39.039773499999995, -76.92718505662606], [38.9318369, -77.1671337963356], [38.8950368, -77.0365427], [42.3370414, -71.2092214], [41.8755616, -87.6244212], [33.7489924, -84.3902644], [31.035862, -85.39815287941555], [40.7127281, -74.0060152], [40.4416941, -79.9900861], [47.6765382, -122.2070775], [37.3228934, -122.0322895], [39.1014537, -84.5124602], [39.0817985, -77.1516844], [38.8950368, -77.0365427], [38.7767435, -77.1807019310668], [39.039773499999995, -76.92718505662606], [38.8051095, -77.0470229], [38.8950368, -77.0365427], [38.8462236, -77.3063733], [38.9695316, -77.3859479], [39.2908816, -76.610759], [38.9786401, -76.492786], [39.1044123, -76.8669233], [38.9318369, -77.1671337963356], [38.9318369, -77.1671337963356], [38.8462236, -77.3063733], [39.17130815, -77.26557848822242], [38.9695316, -77.3859479], [38.8950368, -77.0365427], [38.9424464, -76.7301718], [38.9695316, -77.3859479], [40.7127281, -74.0060152], [47.6038321, -122.330062], [47.6038321, -122.330062], [39.2908816, -76.610759], [40.7127281, -74.0060152], [40.6526006, -73.9497211], [37.3790629, -122.116578]],
+                {&quot;blur&quot;: 15, &quot;maxZoom&quot;: 18, &quot;minOpacity&quot;: 0.5, &quot;radius&quot;: 15}
+            ).addTo(map_1db4e624f4b324eaf027746fe59959ca);
+        
+</script>
+</html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+</div>
+</div>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute top 6 job titles</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>top_job_titles <span class="op">=</span> df[<span class="st">"clean_job_title"</span>].value_counts().nlargest(<span class="dv">5</span>).index.tolist()</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter data to include only top 6 job titles</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>df_top_jobs <span class="op">=</span> df[df[<span class="st">"clean_job_title"</span>].isin(top_job_titles)]</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new column to represent work from home as a string for plotting</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>df_top_jobs[<span class="st">"wfh_str"</span>] <span class="op">=</span> np.where(df_top_jobs[<span class="st">"work_from_home"</span>] <span class="op">==</span> <span class="dv">1</span>, <span class="st">"Yes"</span>, <span class="st">"No"</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute percentages of work from home for each job title</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>job_title_percents <span class="op">=</span> (</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    df_top_jobs.groupby([<span class="st">"clean_job_title"</span>, <span class="st">"wfh_str"</span>])[<span class="st">"work_from_home"</span>]</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    .count()</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    .groupby(level<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="dv">100</span> <span class="op">*</span> x <span class="op">/</span> x.<span class="bu">sum</span>())</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    .unstack()</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">"#BA55D3"</span>, <span class="st">"#00BFFF"</span>]</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Create stacked bar chart</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure(</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>[</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>        go.Bar(</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>            name<span class="op">=</span><span class="st">"No"</span>,</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>            x<span class="op">=</span>top_job_titles,</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>            y<span class="op">=</span>job_title_percents[<span class="st">"No"</span>],</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>            marker_color<span class="op">=</span>colors[<span class="dv">0</span>],</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>            hovertemplate<span class="op">=</span><span class="st">"Percentage: %</span><span class="sc">{y:.1f}</span><span class="st">%"</span>,</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>        go.Bar(</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>            name<span class="op">=</span><span class="st">"Yes"</span>,</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>            x<span class="op">=</span>top_job_titles,</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>            y<span class="op">=</span>job_title_percents[<span class="st">"Yes"</span>],</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>            marker_color<span class="op">=</span>colors[<span class="dv">1</span>],</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>            hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;Percentage:&lt;/b&gt; %</span><span class="sc">{y:.1f}</span><span class="st">%"</span>,</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Update layout</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Percentage of Work from Home Job Postings"</span>,</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">"Job Title"</span>,</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">"Percent of Job Postings"</span>,</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">"stack"</span>,</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span>{<span class="st">"categoryorder"</span>: <span class="st">"min ascending"</span>, <span class="st">"tickmode"</span>: <span class="st">"array"</span>, <span class="st">"ticklen"</span>: <span class="dv">10</span>},</span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>    legend<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Work From Home"</span>),</span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(tickangle<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Show plot</span></span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/var/folders/m0/y_433zr10m79zw6c3ccqn31c0000gn/T/ipykernel_33027/1794117047.py:8: SettingWithCopyWarning:
+
+
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+/var/folders/m0/y_433zr10m79zw6c3ccqn31c0000gn/T/ipykernel_33027/1794117047.py:15: FutureWarning:
+
+Not prepending group keys to the result index of transform-like apply. In the future, the group keys will be included in the index, regardless of whether the applied function returns a like-indexed object.
+To preserve the previous behavior, use
+
+    &gt;&gt;&gt; .groupby(..., group_keys=False)
+
+To adopt the future behavior and silence this warning, use 
+
+    &gt;&gt;&gt; .groupby(..., group_keys=True)
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="d6978bc1-0d2f-474c-9ccb-9012523ddd12" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("d6978bc1-0d2f-474c-9ccb-9012523ddd12")) {                    Plotly.newPlot(                        "d6978bc1-0d2f-474c-9ccb-9012523ddd12",                        [{"hovertemplate":"Percentage: %{y:.1f}%","marker":{"color":"#BA55D3"},"name":"No","x":["Machine Learning Engineer","Data Scientist","Data Analyst","Deep Learning Engineer","Blockchain Engineer"],"y":[71.42857142857143,84.41558441558442,87.25490196078431,88.88888888888889,81.56028368794327],"type":"bar"},{"hovertemplate":"<b>Percentage:</b> %{y:.1f}%","marker":{"color":"#00BFFF"},"name":"Yes","x":["Machine Learning Engineer","Data Scientist","Data Analyst","Deep Learning Engineer","Blockchain Engineer"],"y":[28.571428571428573,15.584415584415584,12.745098039215685,11.11111111111111,18.43971631205674],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"Job Title"},"categoryorder":"min ascending","tickmode":"array","ticklen":10,"tickangle":0},"title":{"text":"Percentage of Work from Home Job Postings"},"yaxis":{"title":{"text":"Percent of Job Postings"}},"barmode":"stack","legend":{"title":{"text":"Work From Home"}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('d6978bc1-0d2f-474c-9ccb-9012523ddd12');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the minimum_education column to a categorical data type</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"minimum_education"</span>] <span class="op">=</span> df[<span class="st">"minimum_education"</span>].astype(<span class="st">"category"</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>df_reduce <span class="op">=</span> df[</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Machine Learning Engineer"</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">|</span> (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Data Scientist"</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">|</span> (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Data Analyst"</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">|</span> (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Deep Learning Engineer"</span>)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">|</span> (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Blockchain Engineer"</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Group the data by job title and minimum education</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>grouped <span class="op">=</span> (</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    df_reduce.groupby([<span class="st">"clean_job_title"</span>, <span class="st">"minimum_education"</span>])</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    .size()</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    .reset_index(name<span class="op">=</span><span class="st">"counts"</span>)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a custom color scale</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">"#FFA07A"</span>, <span class="st">"#FFC0CB"</span>, <span class="st">"#BA55D3"</span>, <span class="st">"#00BFFF"</span>, <span class="st">"#3CB371"</span>, <span class="st">"#FFD700"</span>]</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the sunburst plot</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.sunburst(</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>    grouped,</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    path<span class="op">=</span>[<span class="st">"clean_job_title"</span>, <span class="st">"minimum_education"</span>],</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    values<span class="op">=</span><span class="st">"counts"</span>,</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">"clean_job_title"</span>,</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>    color_discrete_sequence<span class="op">=</span>colors,</span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Update the hovertemplate</span></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>fig.update_traces(hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{id}</span><span class="st"> &lt;/b&gt;"</span> <span class="op">+</span> <span class="st">"&lt;br&gt;Total Job Postings: %</span><span class="sc">{value}</span><span class="st">"</span>)</span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Update the layout with a title and axis labels</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Minimum Education Required by Job Title"</span>,</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Job Title"</span>),</span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(title<span class="op">=</span><span class="st">"Minimum Education"</span>),</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>    uniformtext<span class="op">=</span><span class="bu">dict</span>(minsize<span class="op">=</span><span class="dv">10</span>, mode<span class="op">=</span><span class="st">"hide"</span>),</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">600</span>,</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">600</span>,</span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="b94e98f4-fcd0-49d1-8a52-eb13f3cbd627" class="plotly-graph-div" style="height:600px; width:600px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("b94e98f4-fcd0-49d1-8a52-eb13f3cbd627")) {                    Plotly.newPlot(                        "b94e98f4-fcd0-49d1-8a52-eb13f3cbd627",                        [{"branchvalues":"total","customdata":[["Blockchain Engineer"],["Data Analyst"],["Data Scientist"],["Deep Learning Engineer"],["Machine Learning Engineer"],["Blockchain Engineer"],["Data Analyst"],["Data Scientist"],["Deep Learning Engineer"],["Machine Learning Engineer"],["Blockchain Engineer"],["Data Analyst"],["Data Scientist"],["Deep Learning Engineer"],["Machine Learning Engineer"],["Blockchain Engineer"],["Data Analyst"],["Data Scientist"],["Deep Learning Engineer"],["Machine Learning Engineer"]],"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"<b>%{id} </b><br>Total Job Postings: %{value}","ids":["Blockchain Engineer/Bachelor","Data Analyst/Bachelor","Data Scientist/Bachelor","Deep Learning Engineer/Bachelor","Machine Learning Engineer/Bachelor","Blockchain Engineer/Master","Data Analyst/Master","Data Scientist/Master","Deep Learning Engineer/Master","Machine Learning Engineer/Master","Blockchain Engineer/PhD","Data Analyst/PhD","Data Scientist/PhD","Deep Learning Engineer/PhD","Machine Learning Engineer/PhD","Blockchain Engineer","Data Analyst","Data Scientist","Deep Learning Engineer","Machine Learning Engineer"],"labels":["Bachelor","Bachelor","Bachelor","Bachelor","Bachelor","Master","Master","Master","Master","Master","PhD","PhD","PhD","PhD","PhD","Blockchain Engineer","Data Analyst","Data Scientist","Deep Learning Engineer","Machine Learning Engineer"],"marker":{"colors":["#FFA07A","#FFC0CB","#BA55D3","#00BFFF","#3CB371","#FFA07A","#FFC0CB","#BA55D3","#00BFFF","#3CB371","#FFA07A","#FFC0CB","#BA55D3","#00BFFF","#3CB371","#FFA07A","#FFC0CB","#BA55D3","#00BFFF","#3CB371"]},"name":"","parents":["Blockchain Engineer","Data Analyst","Data Scientist","Deep Learning Engineer","Machine Learning Engineer","Blockchain Engineer","Data Analyst","Data Scientist","Deep Learning Engineer","Machine Learning Engineer","Blockchain Engineer","Data Analyst","Data Scientist","Deep Learning Engineer","Machine Learning Engineer","","","","",""],"values":[6,47,44,6,61,0,8,20,11,20,0,0,5,10,14,6,55,69,27,95],"type":"sunburst"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"legend":{"tracegroupgap":0},"margin":{"t":60},"sunburstcolorway":["#FFA07A","#FFC0CB","#BA55D3","#00BFFF","#3CB371","#FFD700"],"uniformtext":{"minsize":10,"mode":"hide"},"title":{"text":"Minimum Education Required by Job Title"},"xaxis":{"title":{"text":"Job Title"}},"yaxis":{"title":{"text":"Minimum Education"}},"height":600,"width":600},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('b94e98f4-fcd0-49d1-8a52-eb13f3cbd627');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+</section>
+<section id="are-job-postings-different-by-city" class="level2">
+<h2 class="anchored" data-anchor-id="are-job-postings-different-by-city">Are job postings different by city</h2>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>location_list <span class="op">=</span> [</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Washington, DC"</span>,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"New York, NY"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"San Francisco, CA"</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Arlington, VA"</span>,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Chicago, IL"</span>,</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Annapolis Junction, MD"</span>,</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Herndon, VA"</span>,</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Seattle, WA"</span>,</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"McLean, VA"</span>,</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Paolo Alto, CA"</span>,</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>df_reduce <span class="op">=</span> df_reduce[df_reduce[<span class="st">"location"</span>].isin(location_list)]</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Group the data by city and job title, count the number of occurrences</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>grouped <span class="op">=</span> (</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    df_reduce.groupby([<span class="st">"location"</span>, <span class="st">"clean_job_title"</span>])</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>    .size()</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>    .reset_index(name<span class="op">=</span><span class="st">"# of Job Postings"</span>)</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">"#FFA07A"</span>, <span class="st">"#FFC0CB"</span>, <span class="st">"#BA55D3"</span>, <span class="st">"#00BFFF"</span>, <span class="st">"#3CB371"</span>, <span class="st">"lightblue"</span>]</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a treemap using plotly.express</span></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.treemap(</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>    grouped,</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>    path<span class="op">=</span>[px.Constant(<span class="st">"USA"</span>), <span class="st">"location"</span>, <span class="st">"clean_job_title"</span>],</span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>    values<span class="op">=</span><span class="st">"# of Job Postings"</span>,</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">"clean_job_title"</span>,</span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>    color_discrete_sequence<span class="op">=</span>colors,</span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Update the hovertemplate</span></span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>fig.update_traces(hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;%</span><span class="sc">{label}</span><span class="st"> &lt;/b&gt;"</span> <span class="op">+</span> <span class="st">"&lt;br&gt;Total Job Postings: %</span><span class="sc">{value}</span><span class="st">"</span>)</span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Update the layout with a title</span></span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Most Common Job Titles by City"</span>,</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the plot</span></span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="3eb0163e-ea28-476e-9514-837065d693aa" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("3eb0163e-ea28-476e-9514-837065d693aa")) {                    Plotly.newPlot(                        "3eb0163e-ea28-476e-9514-837065d693aa",                        [{"branchvalues":"total","customdata":[["Data Analyst"],["Deep Learning Engineer"],["Blockchain Engineer"],["Machine Learning Engineer"],["Data Scientist"],["Data Scientist"],["Blockchain Engineer"],["Data Analyst"],["Data Scientist"],["Data Scientist"],["Machine Learning Engineer"],["Machine Learning Engineer"],["Machine Learning Engineer"],["Deep Learning Engineer"],["Machine Learning Engineer"],["Machine Learning Engineer"],["Data Scientist"],["Deep Learning Engineer"],["Data Scientist"],["Data Analyst"],["Data Analyst"],["Machine Learning Engineer"],["Machine Learning Engineer"],["(?)"],["(?)"],["(?)"],["(?)"],["(?)"],["(?)"],["(?)"],["(?)"],["(?)"]],"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"<b>%{label} </b><br>Total Job Postings: %{value}","ids":["USA/Herndon, VA/Data Analyst","USA/New York, NY/Deep Learning Engineer","USA/Chicago, IL/Blockchain Engineer","USA/San Francisco, CA/Machine Learning Engineer","USA/Arlington, VA/Data Scientist","USA/McLean, VA/Data Scientist","USA/New York, NY/Blockchain Engineer","USA/McLean, VA/Data Analyst","USA/Chicago, IL/Data Scientist","USA/Seattle, WA/Data Scientist","USA/Seattle, WA/Machine Learning Engineer","USA/Herndon, VA/Machine Learning Engineer","USA/McLean, VA/Machine Learning Engineer","USA/San Francisco, CA/Deep Learning Engineer","USA/Arlington, VA/Machine Learning Engineer","USA/New York, NY/Machine Learning Engineer","USA/Washington, DC/Data Scientist","USA/Seattle, WA/Deep Learning Engineer","USA/Herndon, VA/Data Scientist","USA/Washington, DC/Data Analyst","USA/Arlington, VA/Data Analyst","USA/Chicago, IL/Machine Learning Engineer","USA/Washington, DC/Machine Learning Engineer","USA/Arlington, VA","USA/Chicago, IL","USA/Herndon, VA","USA/McLean, VA","USA/New York, NY","USA/San Francisco, CA","USA/Seattle, WA","USA/Washington, DC","USA"],"labels":["Data Analyst","Deep Learning Engineer","Blockchain Engineer","Machine Learning Engineer","Data Scientist","Data Scientist","Blockchain Engineer","Data Analyst","Data Scientist","Data Scientist","Machine Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Deep Learning Engineer","Machine Learning Engineer","Machine Learning Engineer","Data Scientist","Deep Learning Engineer","Data Scientist","Data Analyst","Data Analyst","Machine Learning Engineer","Machine Learning Engineer","Arlington, VA","Chicago, IL","Herndon, VA","McLean, VA","New York, NY","San Francisco, CA","Seattle, WA","Washington, DC","USA"],"marker":{"colors":["#FFA07A","#FFC0CB","#BA55D3","#00BFFF","#3CB371","#3CB371","#BA55D3","#FFA07A","#3CB371","#3CB371","#00BFFF","#00BFFF","#00BFFF","#FFC0CB","#00BFFF","#00BFFF","#3CB371","#FFC0CB","#3CB371","#FFA07A","#FFA07A","#00BFFF","#00BFFF","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue"]},"name":"","parents":["USA/Herndon, VA","USA/New York, NY","USA/Chicago, IL","USA/San Francisco, CA","USA/Arlington, VA","USA/McLean, VA","USA/New York, NY","USA/McLean, VA","USA/Chicago, IL","USA/Seattle, WA","USA/Seattle, WA","USA/Herndon, VA","USA/McLean, VA","USA/San Francisco, CA","USA/Arlington, VA","USA/New York, NY","USA/Washington, DC","USA/Seattle, WA","USA/Herndon, VA","USA/Washington, DC","USA/Arlington, VA","USA/Chicago, IL","USA/Washington, DC","USA","USA","USA","USA","USA","USA","USA","USA",""],"values":[1,2,2,10,3,3,3,3,5,1,4,2,3,3,6,10,10,1,2,14,2,4,4,11,11,5,9,15,13,6,28,98],"type":"treemap"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"legend":{"tracegroupgap":0},"margin":{"t":60},"treemapcolorway":["#FFA07A","#FFC0CB","#BA55D3","#00BFFF","#3CB371","lightblue"],"title":{"text":"Most Common Job Titles by City"}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('3eb0163e-ea28-476e-9514-837065d693aa');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+</section>
+<section id="how-are-the-required-skills-different-by-job" class="level2">
+<h2 class="anchored" data-anchor-id="how-are-the-required-skills-different-by-job">How are the required skills different by job</h2>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>grouped <span class="op">=</span> df[</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Machine Learning Engineer"</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="op">|</span> (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Data Scientist"</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">|</span> (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Data Analyst"</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">|</span> (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Deep Learning Engineer"</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">|</span> (df[<span class="st">"clean_job_title"</span>] <span class="op">==</span> <span class="st">"Blockchain Engineer"</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>grouped <span class="op">=</span> grouped.drop(<span class="st">"work_from_home"</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>grouped <span class="op">=</span> grouped.groupby(<span class="st">"clean_job_title"</span>).mean() <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co"># create a heatmap using plotly express</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.imshow(</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    grouped,</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Required Skills by Job Type"</span>,</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>grouped.index,</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span><span class="bu">dict</span>(x<span class="op">=</span><span class="st">"Skills"</span>, y<span class="op">=</span><span class="st">"Job Title"</span>, color<span class="op">=</span><span class="st">"Percentage of Jobs"</span>),</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>[</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Python"</span>,</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">"SQL"</span>,</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Machine Learning"</span>,</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Communication"</span>,</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Software Engineering"</span>,</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Deep Learning"</span>,</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Language Processing"</span>,</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Pytorch"</span>,</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Computer Vision"</span>,</span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Tableau"</span>,</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Management"</span>,</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Tensorflow"</span>,</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>    color_continuous_scale<span class="op">=</span><span class="st">"Blues"</span>,</span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a><span class="co"># make the tooltip pretty</span></span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a>fig.update_traces(</span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a>    hovertemplate<span class="op">=</span><span class="st">"&lt;b&gt;Job Title:&lt;/b&gt; %</span><span class="sc">{y}</span><span class="st">&lt;br&gt;"</span></span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> <span class="st">"&lt;b&gt;Skill:&lt;/b&gt; %</span><span class="sc">{x}</span><span class="st">"</span></span>
+<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> <span class="st">"&lt;br&gt;&lt;b&gt;Percentage of Jobs:&lt;/b&gt;  %</span><span class="sc">{z:.2f}</span><span class="st">%&lt;br&gt;"</span></span>
+<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a>fig.update_layout(width<span class="op">=</span><span class="dv">1000</span>)</span>
+<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/var/folders/m0/y_433zr10m79zw6c3ccqn31c0000gn/T/ipykernel_33027/149110318.py:9: FutureWarning:
+
+The default value of numeric_only in DataFrameGroupBy.mean is deprecated. In a future version, numeric_only will default to False. Either specify numeric_only or select only columns which should be valid for the function.
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="20c57a8d-8965-4d78-b109-727b4b76ea82" class="plotly-graph-div" style="height:525px; width:1000px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("20c57a8d-8965-4d78-b109-727b4b76ea82")) {                    Plotly.newPlot(                        "20c57a8d-8965-4d78-b109-727b4b76ea82",                        [{"coloraxis":"coloraxis","name":"0","x":["Python","SQL","Machine Learning","Communication","Software Engineering","Deep Learning","Language Processing","Pytorch","Computer Vision","Tableau","Management","Tensorflow"],"y":["Blockchain Engineer","Data Analyst","Data Scientist","Deep Learning Engineer","Machine Learning Engineer"],"z":[[28.57142857142857,7.142857142857142,0.0,35.714285714285715,21.428571428571427,0.0,0.0,0.0,0.0,0.0,7.142857142857142,0.0],[27.27272727272727,46.75324675324675,5.194805194805195,51.94805194805194,1.2987012987012987,1.2987012987012987,2.5974025974025974,0.0,0.0,35.064935064935064,55.84415584415584,0.0],[65.68627450980392,42.15686274509804,63.725490196078425,39.21568627450981,6.862745098039216,24.509803921568626,19.607843137254903,12.745098039215685,1.9607843137254901,18.627450980392158,33.33333333333333,11.76470588235294],[58.333333333333336,0.0,66.66666666666666,30.555555555555557,22.22222222222222,83.33333333333334,8.333333333333332,50.0,38.88888888888889,0.0,11.11111111111111,44.44444444444444],[65.95744680851064,19.858156028368796,81.56028368794325,32.62411347517731,16.312056737588655,52.4822695035461,15.602836879432624,49.645390070921984,24.822695035460992,2.127659574468085,21.27659574468085,46.808510638297875]],"type":"heatmap","xaxis":"x","yaxis":"y","hovertemplate":"<b>Job Title:</b> %{y}<br><b>Skill:</b> %{x}<br><b>Percentage of Jobs:</b>  %{z:.2f}%<br>"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"scaleanchor":"y","constrain":"domain","title":{"text":"Skills"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"autorange":"reversed","constrain":"domain","title":{"text":"Job Title"}},"coloraxis":{"colorbar":{"title":{"text":"Percentage of Jobs"}},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]]},"title":{"text":"Required Skills by Job Type"},"width":1000},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('20c57a8d-8965-4d78-b109-727b4b76ea82');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"Qualifications"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="21">
+<pre><code>0      language fluency: english (required) the requi...
+1                                                    NaN
+2      ability to parse and understand evm (and/or so...
+3      we’re looking for a capable generalist enginee...
+4                                                    NaN
+                             ...                        
+589                                                  NaN
+590    has experience with the latest nlp techniques ...
+591    3+ years’ experience or compensating advanced ...
+592    these are in mix language english, hindi and t...
+593    expertise in at least one key ml area consiste...
+Name: Qualifications, Length: 594, dtype: object</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> wordcloud <span class="im">import</span> WordCloud, STOPWORDS</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># concatenate all the text in the column into a single string</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"Qualifications"</span>][df[<span class="st">"Qualifications"</span>] <span class="op">!=</span> df[<span class="st">"Qualifications"</span>]] <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">' '</span>.join(df[<span class="st">'Qualifications'</span>].values.tolist())</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co"># create a set of stopwords to exclude from the word cloud</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>stopwords <span class="op">=</span> <span class="bu">set</span>(STOPWORDS)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="co"># create a WordCloud object with the stopwords set and other parameters</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>wordcloud <span class="op">=</span> WordCloud(width<span class="op">=</span><span class="dv">800</span>, height<span class="op">=</span><span class="dv">800</span>, background_color<span class="op">=</span><span class="st">'white'</span>, stopwords<span class="op">=</span>stopwords, colormap <span class="op">=</span> colors)</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="co"># generate the word cloud from the text</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>wordcloud.generate(text)</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="co"># visualize the word cloud</span></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>), facecolor<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>plt.imshow(wordcloud)</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)</span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>plt.tight_layout(pad<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/var/folders/m0/y_433zr10m79zw6c3ccqn31c0000gn/T/ipykernel_32798/2131167570.py:7: SettingWithCopyWarning:
+
+
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="visuals_files/figure-html/cell-13-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
