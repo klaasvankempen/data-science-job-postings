@@ -15,7 +15,7 @@ my_theme = {
                 }
             },
             'tickfont': {
-                'size': 15,
+                'size': 10,
                 'family': 'Arial'
             },
             'linewidth': 2,
@@ -29,7 +29,7 @@ my_theme = {
                 }
             },
             'tickfont': {
-                'size': 15,
+                'size': 12,
                 'family': 'Arial'
             },
             'linewidth': 2,
