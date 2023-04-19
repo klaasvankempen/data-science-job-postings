@@ -181,9 +181,9 @@ fig3.update_layout(
     hoverlabel=dict(font=dict(size=30)),
 )
 fig3.update_layout(
-    legend={"title": {"text": "Job Site", "font": {"size": 12}}, "font": {"size": 10}}
+    legend={"title": {"text": "Job Site", "font": {"size": 10}}, "font": {"size": 10}}
 )
-fig3.update_layout(my_theme["layout"], title_x=0.23)
+fig3.update_layout(my_theme["layout"], title_x=0.26)
 
 fig3.update_xaxes(tickangle=30)
 
@@ -196,7 +196,7 @@ df_reduce = df_reduce.dropna(subset=["location_coord"])
 heat_data = [eval(coord) for coord in df_reduce["location_coord"]]
 
 # Create a Folium map centered on the US
-m = folium.Map(location=[40, -95], zoom_start=4)
+m = folium.Map(location=[40, -75], zoom_start=4)
 
 # Add heatmap layer
 HeatMap(heat_data, radius=15).add_to(m)
@@ -255,10 +255,10 @@ fig5.update_layout(
     hoverlabel=dict(font=dict(size=30)),
 )
 fig5.update_xaxes(tickangle=0)
-fig5.update_layout(my_theme["layout"], title_x=0.23)
+fig5.update_layout(my_theme["layout"], title_x=0.20)
 fig5.update_layout(
     legend={
-        "title": {"text": "Work From<br>Home Job", "font": {"size": 12}},
+        "title": {"text": "Work From<br>Home Job", "font": {"size": 10}},
         "font": {"size": 10},
     }
 )
@@ -309,8 +309,8 @@ fig6.update_layout(
     width=600,
     hoverlabel=dict(font=dict(size=30)),
 )
-fig6.update_layout(uniformtext=dict(minsize=18, mode="hide"))
-fig6.update_layout(my_theme["layout"], title_x=0.32)
+fig6.update_layout(uniformtext=dict(minsize=12, mode="hide"))
+fig6.update_layout(my_theme["layout"], title_x=0.25)
 
 ######################################## Plot 7 ########################################
 
@@ -401,13 +401,13 @@ fig8.update_traces(
     + "<b>Skill:</b> %{x}"
     + "<br><b>Percentage of Jobs:</b>  %{z:.2f}%<br>"
 )
-fig8.update_layout(hoverlabel=dict(font=dict(size=15)), height=900)
+fig8.update_layout(hoverlabel=dict(font=dict(size=15)), height=300)
 fig8.update_layout(my_theme["layout"], title_x=0.4)
 fig8.layout.coloraxis.colorbar.title = {
     "text": "Percentage of Jobs <br> Requiring Skill",
     "font": {"size": 20},
 }
-fig8.layout.coloraxis.colorbar.tickfont = {"size": 20}
+fig8.layout.coloraxis.colorbar.tickfont = {"size": 12}
 
 
 ######################################## Streamlit App ########################################
