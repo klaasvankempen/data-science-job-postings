@@ -451,7 +451,7 @@ j = 425
 k = 160
 
 # create three columns
-space2, kpi1, kpi2, kpi3, space3 = st.columns([0.8, 1, 1, 1, 1])
+kpi1, kpi2, kpi3= st.columns([1, 1, 1])
 
 
 # fill in those three columns with respective metrics or KPIs
