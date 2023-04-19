@@ -196,7 +196,7 @@ df_reduce = df_reduce.dropna(subset=["location_coord"])
 heat_data = [eval(coord) for coord in df_reduce["location_coord"]]
 
 # Create a Folium map centered on the US
-m = folium.Map(location=[40, -75], zoom_start=4)
+m = folium.Map(location=[40, -65], zoom_start=4)
 
 # Add heatmap layer
 HeatMap(heat_data, radius=15).add_to(m)
