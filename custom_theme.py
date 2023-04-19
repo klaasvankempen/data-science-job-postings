@@ -29,7 +29,7 @@ my_theme = {
                 }
             },
             'tickfont': {
-                'size': 12,
+                'size': 15,
                 'family': 'Arial'
             },
             'linewidth': 2,
