@@ -529,7 +529,7 @@ st.plotly_chart(fig2, use_container_width=True)
 
 
 st.markdown("***")
-st_folium(m, width=1400)
+st_folium(m, width=1400, height = 500)
 
 ######################## Figure 7 ########################
 
