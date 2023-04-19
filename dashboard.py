@@ -356,7 +356,7 @@ fig7.update_layout(
     height=600,
 )
 fig7.update_layout(my_theme["layout"], title_x=0.30)
-fig7.update_layout(uniformtext=dict(minsize=12, mode="hide"))
+fig7.update_layout(uniformtext=dict(minsize=8, mode="hide"))
 
 ######################################## Plot 8 ########################################
 
