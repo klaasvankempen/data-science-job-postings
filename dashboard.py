@@ -405,7 +405,7 @@ fig8.update_layout(hoverlabel=dict(font=dict(size=15)), height=500)
 fig8.update_layout(my_theme["layout"], title_x=0.30)
 fig8.layout.coloraxis.colorbar.title = {
     "text": "Percentage of Jobs <br> Requiring Skill",
-    "font": {"size": 20},
+    "font": {"size": 12},
 }
 fig8.update_layout(
 yaxis = dict(
