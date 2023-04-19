@@ -177,7 +177,7 @@ fig3.update_layout(
     barmode="stack",
     xaxis={"categoryorder": "max descending", "tickmode": "array", "ticklen": 10},
     template="plotly_white",
-    height=600,
+    height=400,
     hoverlabel=dict(font=dict(size=15)),
 )
 fig3.update_layout(
@@ -251,7 +251,7 @@ fig5.update_layout(
     barmode="stack",
     xaxis={"categoryorder": "min ascending", "tickmode": "array", "ticklen": 10},
     legend=dict(title="Work From Home"),
-    height=600,
+    height=400,
     hoverlabel=dict(font=dict(size=15)),
 )
 fig5.update_xaxes(tickangle=0)
