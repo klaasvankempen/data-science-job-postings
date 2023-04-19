@@ -181,7 +181,7 @@ fig3.update_layout(
     hoverlabel=dict(font=dict(size=30)),
 )
 fig3.update_layout(
-    legend={"title": {"text": "Job Site", "font": {"size": 30}}, "font": {"size": 14}}
+    legend={"title": {"text": "Job Site", "font": {"size": 15}}, "font": {"size": 12}}
 )
 fig3.update_layout(my_theme["layout"], title_x=0.37)
 
@@ -196,7 +196,7 @@ df_reduce = df_reduce.dropna(subset=["location_coord"])
 heat_data = [eval(coord) for coord in df_reduce["location_coord"]]
 
 # Create a Folium map centered on the US
-m = folium.Map(location=[40, -95], zoom_start=5)
+m = folium.Map(location=[40, -95], zoom_start=4)
 
 # Add heatmap layer
 HeatMap(heat_data, radius=15).add_to(m)
@@ -258,8 +258,8 @@ fig5.update_xaxes(tickangle=0)
 fig5.update_layout(my_theme["layout"], title_x=0.29)
 fig5.update_layout(
     legend={
-        "title": {"text": "Work From<br>Home Job", "font": {"size": 20}},
-        "font": {"size": 15},
+        "title": {"text": "Work From<br>Home Job", "font": {"size": 15}},
+        "font": {"size": 12},
     }
 )
 ######################################## Plot 6 ########################################
@@ -442,7 +442,7 @@ st.markdown(
 
 wch_colour_box = (0, 222, 0)
 wch_colour_font = (0, 0, 0)
-fontsize = 50
+fontsize = 30
 iconname = "fas fa-certificate"
 sline = "Job Postings"
 lnk = '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">'
@@ -470,7 +470,7 @@ with kpi1:
                         padding-bottom: 18px; 
                         line-height:25px;'>
                         <i class='{iconname} fa-xs'></i> {i}
-                        </style><BR><span style='font-size: 30px; 
+                        </style><BR><span style='font-size: 20px; 
                         margin-top: 0;'>{sline}</style></span></p>"""
 
     st.markdown(lnk + htmlstr, unsafe_allow_html=True)
@@ -491,7 +491,7 @@ with kpi2:
                         padding-bottom: 18px; 
                         line-height:25px;'>
                         <i class='{iconname} fa-xs'></i> {j}
-                        </style><BR><span style='font-size: 30px; 
+                        </style><BR><span style='font-size: 20px; 
                         margin-top: 0;'>{sline}</style></span></p>"""
 
     st.markdown(lnk + htmlstr, unsafe_allow_html=True)
@@ -512,7 +512,7 @@ with kpi3:
                         padding-bottom: 18px; 
                         line-height:25px;'>
                         <i class='{iconname} fa-xs'></i> {k}
-                        </style><BR><span style='font-size: 30px; 
+                        </style><BR><span style='font-size: 20px; 
                         margin-top: 0;'>{sline}</style></span></p>"""
 
     st.markdown(lnk + htmlstr, unsafe_allow_html=True)
