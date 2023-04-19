@@ -2,7 +2,7 @@ my_theme = {
     'layout': {
         'title': {
             'font': {
-                'size': 15,
+                'size': 20,
                 'family': 'Arial'
             },
             'x': 0.35 
@@ -10,7 +10,7 @@ my_theme = {
         'xaxis': {
             'title': {
                 'font': {
-                    'size': 15,
+                    'size': 20,
                     'family': 'Arial'
                 }
             },
@@ -24,7 +24,7 @@ my_theme = {
         'yaxis': {
             'title': {
                 'font': {
-                    'size': 15,
+                    'size': 20,
                     'family': 'Arial'
                 }
             },
