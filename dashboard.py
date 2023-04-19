@@ -420,7 +420,7 @@ st.markdown(
     """
 <style>
 .big-font {
-    font-size:80px !important;
+    font-size:60px !important;
 }
 </style>
 """,
@@ -429,7 +429,7 @@ st.markdown(
 
 
 st.markdown(
-    '<p class="big-font">Data Science Job Postings Dashboard</p>',
+    '<center><p class="big-font">Data Science Job Postings Dashboard</p></center>',
     unsafe_allow_html=True,
     )
 st.text(" ")
