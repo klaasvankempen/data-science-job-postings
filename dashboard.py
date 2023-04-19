@@ -523,42 +523,35 @@ st.markdown("***")
 st.plotly_chart(fig1, use_container_width=True)
 
 ######################## Figure 2 ########################
-spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
-with col1:
-    st.markdown("***")
-    st.plotly_chart(fig2, use_container_width=True)
 
-spacer1, col1, spacer2 = st.columns([0.4, 1, 0.4])
-with col1:
-    st.markdown("***")
-    st_folium(m, width=1400)
+st.markdown("***")
+st.plotly_chart(fig2, use_container_width=True)
+
+
+st.markdown("***")
+st_folium(m, width=1400)
 
 ######################## Figure 7 ########################
-spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
-with col1:
-    st.markdown("***")
-    st.plotly_chart(fig7, use_container_width=True)
+
+st.markdown("***")
+st.plotly_chart(fig7, use_container_width=True)
 
 ######################## Figure 3 ########################
-spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
-with col1:
-    st.markdown("***")
-    st.plotly_chart(fig3, use_container_width=True)
+
+st.markdown("***")
+st.plotly_chart(fig3, use_container_width=True)
 
 ######################## Figure 5 ########################
-spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
-with col1:
-    st.markdown("***")
-    st.plotly_chart(fig5, use_container_width=True)
+
+st.markdown("***")
+st.plotly_chart(fig5, use_container_width=True)
 
 ######################## Figure 6 ########################
-spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
-with col1:
-    st.markdown("***")
-    st.plotly_chart(fig6, use_container_width=True)
+
+st.markdown("***")
+st.plotly_chart(fig6, use_container_width=True)
 
 ######################## Figure 8 ########################
-spacer1, col1, spacer2 = st.columns([0.3, 1, 0.4])
-with col1:
-    st.markdown("***")
-    st.plotly_chart(fig8, use_container_width=True)
+
+st.markdown("***")
+st.plotly_chart(fig8, use_container_width=True)
