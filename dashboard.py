@@ -355,7 +355,7 @@ fig7.update_layout(
     hoverlabel=dict(font=dict(size=30)),
     height=600,
 )
-fig7.update_layout(my_theme["layout"], title_x=0.32)
+fig7.update_layout(my_theme["layout"], title_x=0.30)
 fig7.update_layout(uniformtext=dict(minsize=15, mode="hide"))
 
 ######################################## Plot 8 ########################################
@@ -402,7 +402,7 @@ fig8.update_traces(
     + "<br><b>Percentage of Jobs:</b>  %{z:.2f}%<br>"
 )
 fig8.update_layout(hoverlabel=dict(font=dict(size=15)), height=300)
-fig8.update_layout(my_theme["layout"], title_x=0.4)
+fig8.update_layout(my_theme["layout"], title_x=0.30)
 fig8.layout.coloraxis.colorbar.title = {
     "text": "Percentage of Jobs <br> Requiring Skill",
     "font": {"size": 20},
