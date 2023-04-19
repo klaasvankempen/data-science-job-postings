@@ -13,23 +13,21 @@ from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 
 
-
-
 # Import Data
 df = pd.read_csv("./cleaned.csv")
 df = df.drop("Unnamed: 0", axis=1)
 
 ######################################## Plot 1 ########################################
-# Compute top 5 job titles
+# find top 5 job titles
 top_job_titles = df["clean_job_title"].value_counts().nlargest(5).index.tolist()
 
-# Filter data to include only top 5 job titles
+# filter data to include only top 5 job titles
 df_top_jobs = df[df["clean_job_title"].isin(top_job_titles)]
 
-# Define custom color palette
+# custom color palette
 colors = ["#FFA07A", "#FFC0CB", "#BA55D3", "#00BFFF", "#3CB371", "#FFD700"]
 
-# Create bar graph
+# define bar graph
 fig1 = px.histogram(
     df_top_jobs,
     x="clean_job_title",
@@ -41,7 +39,6 @@ fig1 = px.histogram(
 )
 fig1.update_traces(hovertemplate="<b>Number of Job Postings:</b> %{y}")
 
-# Update layout
 fig1.update_layout(
     title="Top 5 Job Titles by Number of Postings",
     xaxis_title="Job Title",
@@ -55,14 +52,14 @@ fig1.update_layout(my_theme["layout"])
 
 ######################################## Plot 2 ########################################
 
-# Compute top 5 job titles
+# find top 10 locations
 df_reduce = df[df["location"] != "United States"]
 top_locations = df_reduce["location"].value_counts().nlargest(10).index.tolist()
 
-# Filter data to include only top 5 job titles
+# filter data to include only top 10 locations
 df_top_locations = df[df["location"].isin(top_locations)]
 
-# Define custom color palette
+# custom color palette
 colors = [
     "#FFA07A",
     "#FFC0CB",
@@ -76,7 +73,7 @@ colors = [
     "#F08080",
 ]
 
-# Create bar graph
+# define bar graph
 fig2 = px.histogram(
     df_top_locations,
     x="location",
@@ -88,7 +85,6 @@ fig2 = px.histogram(
 )
 fig2.update_traces(hovertemplate="<b>Number of Job Postings:</b> %{y}")
 
-# Update layout
 fig2.update_layout(
     title="Top 10 Locations by Number of Jobs",
     xaxis_title="Location",
@@ -104,20 +100,20 @@ fig2.update_layout(my_theme["layout"])
 
 ######################################## Plot 3 ########################################
 
-# Compute top 5 job titles
+# find top 5 job titles
 top_job_titles = df["clean_job_title"].value_counts().nlargest(5).index.tolist()
 
-# Filter data to include only top 5 job titles
+# filter data to include only top 5 job titles
 df_top_jobs = df[df["clean_job_title"].isin(top_job_titles)]
 
-# Compute top 5 job posting sites
+# find top 5 job posting sites
 top_sites = df["via"].value_counts().nlargest(5).index.tolist()
 
 
-# Filter data to include only top 5 job titles
+# filter data to include only top 5 job posting sites
 df_top_jobs = df_top_jobs[df_top_jobs["via"].isin(top_sites)]
 
-# Compute percentages of work from home for each job title
+# find percentages of work from home for each job title
 job_title_percents = (
     df_top_jobs.groupby(["clean_job_title", "via"])["via"]
     .count()
@@ -128,7 +124,7 @@ job_title_percents = (
 colors = ["#FFA07A", "#FFC0CB", "#BA55D3", "#00BFFF", "#3CB371", "#FFD700"]
 
 job_title_percents.fillna(0)
-# Create stacked bar chart
+# define stacked bar chart, 1 trace for each job site
 fig3 = go.Figure(
     data=[
         go.Bar(
@@ -169,7 +165,6 @@ fig3 = go.Figure(
     ]
 )
 
-# Update layout
 fig3.update_layout(
     title="Job Postings by Site",
     xaxis_title="Job Title",
@@ -189,40 +184,41 @@ fig3.update_xaxes(tickangle=30)
 
 ######################################## Plot 4 ########################################
 
+# filter data to remove USA as location
 df_reduce = df[df["location"] != "United States"]
 df_reduce = df_reduce.dropna(subset=["location_coord"])
 
-# Convert string coordinates to floats
-heat_data = [eval(coord) for coord in df_reduce["location_coord"]]
+# change coordinates from string to floats
+heat_data = [eval(x) for x in df_reduce["location_coord"]]
 
-# Create a Folium map centered on the US
+# define Folium map centered on the US
 m = folium.Map(location=[40, -65], zoom_start=4)
 
-# Add heatmap layer
+# add heatmap layer to folium map
 HeatMap(heat_data, radius=15).add_to(m)
 
 ######################################## Plot 5 ########################################
 
-# Compute top 5 job titles
+# find top 5 job titles
 top_job_titles = df["clean_job_title"].value_counts().nlargest(5).index.tolist()
 
-# Filter data to include only top 5 job titles
+# filter data to include only top 5 job titles
 df_top_jobs = df[df["clean_job_title"].isin(top_job_titles)]
 
-# Create a new column to represent work from home as a string for plotting
-df_top_jobs["wfh_str"] = np.where(df_top_jobs["work_from_home"] == 1, "Yes", "No")
+# define a new column to represent work from home as a factor
+df_top_jobs["wfh"] = np.where(df_top_jobs["work_from_home"] == 1, "Yes", "No")
 
-# Compute percentages of work from home for each job title
+# find percentage of work from home jobs for each job title
 job_title_percents = (
-    df_top_jobs.groupby(["clean_job_title", "wfh_str"])["work_from_home"]
+    df_top_jobs.groupby(["clean_job_title", "wfh"])["work_from_home"]
     .count()
     .groupby(level=0)
     .apply(lambda x: 100 * x / x.sum())
     .unstack()
 )
-colors = ["#BA55D3", "#00BFFF"]
+colors = ["#BA55D3", "#00BFFF"] # custom colors
 
-# Create stacked bar chart
+# define stacked bar chart, trace for wfh and no wfh
 fig5 = go.Figure(
     data=[
         go.Bar(
@@ -242,7 +238,6 @@ fig5 = go.Figure(
     ]
 )
 
-# Update layout
 fig5.update_layout(
     title="Percentage of Work from Home Job Postings",
     title_x=0.5,
@@ -266,7 +261,7 @@ fig5.update_xaxes(tickangle=30)
 
 ######################################## Plot 6 ########################################
 
-# Convert the minimum_education column to a categorical data type
+# change the minimum_education column categorical data
 df["minimum_education"] = df["minimum_education"].astype("category")
 
 df_reduce = df[
@@ -277,17 +272,17 @@ df_reduce = df[
     | (df["clean_job_title"] == "Blockchain Engineer")
 ]
 
-# Group the data by job title and minimum education
+# group data by job title and minimum education level
 grouped = (
     df_reduce.groupby(["clean_job_title", "minimum_education"])
-    .size()
+    .size() # find size of each group
     .reset_index(name="counts")
 )
 
-# Define a custom color scale
+# custom color scale
 colors = ["#FFA07A", "#FFC0CB", "#BA55D3", "#00BFFF", "#3CB371", "#FFD700"]
 
-# Create the sunburst plot
+# define the sunburst plot with job title as center and minimum education as second step in path
 fig6 = px.sunburst(
     grouped,
     path=["clean_job_title", "minimum_education"],
@@ -296,10 +291,9 @@ fig6 = px.sunburst(
     color_discrete_sequence=colors,
 )
 
-# Update the hovertemplate
+# change the hovertemplate
 fig6.update_traces(hovertemplate="<b>%{id} </b>" + "<br>Total Job Postings: %{value}")
 
-# Update the layout with a title and axis labels
 fig6.update_layout(
     title="Minimum Education Required by Job Title",
     xaxis=dict(title="Job Title"),
@@ -313,7 +307,7 @@ fig6.update_layout(uniformtext=dict(minsize=8, mode="hide"))
 fig6.update_layout(my_theme["layout"], title_x=0.22)
 
 ######################################## Plot 7 ########################################
-
+# Define list of locations that we want in the data
 location_list = [
     "Washington, DC",
     "New York, NY",
@@ -326,17 +320,18 @@ location_list = [
     "McLean, VA",
     "Paolo Alto, CA",
 ]
+# keep only desired locations
 df_reduce = df_reduce[df_reduce["location"].isin(location_list)]
-# Group the data by city and job title, count the number of occurrences
+# group the data by city and job title
 grouped = (
     df_reduce.groupby(["location", "clean_job_title"])
-    .size()
+    .size() # find the size of each group
     .reset_index(name="# of Job Postings")
 )
-
+# custom colors
 colors = ["#FFA07A", "#FFC0CB", "#BA55D3", "#00BFFF", "#3CB371", "lightblue"]
 
-# Create a treemap using plotly.express
+# define treemap 
 fig7 = px.treemap(
     grouped,
     path=[px.Constant("USA"), "location", "clean_job_title"],
@@ -345,11 +340,10 @@ fig7 = px.treemap(
     color_discrete_sequence=colors,
 )
 
-# Update the hovertemplate
+# update the hovertemplate
 fig7.update_traces(
     hovertemplate="<b>%{label} </b>" + "<br>Total Job Postings: %{value}"
 )
-# Update the layout with a title
 fig7.update_layout(
     title="Most Common Job Titles by City",
     hoverlabel=dict(font=dict(size=15)),
@@ -359,7 +353,7 @@ fig7.update_layout(my_theme["layout"], title_x=0.30)
 fig7.update_layout(uniformtext=dict(minsize=8, mode="hide"))
 
 ######################################## Plot 8 ########################################
-
+# keep only top 5 job titles in data
 grouped = df[
     (df["clean_job_title"] == "Machine Learning Engineer")
     | (df["clean_job_title"] == "Data Scientist")
@@ -367,10 +361,13 @@ grouped = df[
     | (df["clean_job_title"] == "Deep Learning Engineer")
     | (df["clean_job_title"] == "Blockchain Engineer")
 ]
+# drop work from home variable
 grouped = grouped.drop("work_from_home", axis=1)
+# group by job title and find mean of every other category
+# each variable is a boolean so we can take the mean and muliptly times 100 to get percentage of jobs requiring each skill
 grouped = grouped.groupby("clean_job_title").mean() * 100
 
-# create a heatmap using plotly express
+# define heatmap 
 fig8 = px.imshow(
     grouped,
     title="Required Skills by Job Type",
@@ -395,7 +392,7 @@ fig8 = px.imshow(
     color_continuous_scale="Blues",
 )
 
-# make the tooltip pretty
+# adjust the tooltip
 fig8.update_traces(
     hovertemplate="<b>Job Title:</b> %{y}<br>"
     + "<b>Skill:</b> %{x}"
@@ -407,9 +404,7 @@ fig8.layout.coloraxis.colorbar.title = {
     "text": "Percentage of Jobs <br> Requiring Skill",
     "font": {"size": 12},
 }
-fig8.update_layout(
-yaxis = dict(
-tickfont = dict(size=10)))
+fig8.update_layout(yaxis=dict(tickfont=dict(size=10)))
 fig8.layout.coloraxis.colorbar.tickfont = {"size": 12}
 
 fig8.update_xaxes(tickangle=30)
@@ -438,7 +433,7 @@ st.markdown(
 st.markdown(
     '<center><p class="big-font">Data Science Job Postings Dashboard</p></center>',
     unsafe_allow_html=True,
-    )
+)
 st.text(" ")
 st.markdown(
     """
@@ -456,7 +451,7 @@ j = 425
 k = 160
 
 # create three columns
-kpi1, kpi2, kpi3= st.columns(3)
+kpi1, kpi2, kpi3 = st.columns(3)
 
 
 # fill in those three columns with respective metrics or KPIs
@@ -534,7 +529,7 @@ st.plotly_chart(fig2, use_container_width=True)
 
 
 st.markdown("***")
-st_folium(m, width=1400, height = 400)
+st_folium(m, width=1400, height=400)
 
 ######################## Figure 7 ########################
 
