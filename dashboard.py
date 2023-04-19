@@ -463,7 +463,7 @@ with kpi1:
                                    {wch_colour_font[2]}, 0.75); 
                         font-size: {fontsize}px; 
                         border-radius: 7px; 
-                        padding-left: 2px; 
+                        padding-left: 12px; 
                         padding-top: 18px; 
                         padding-bottom: 18px; 
                         line-height:25px;'>
