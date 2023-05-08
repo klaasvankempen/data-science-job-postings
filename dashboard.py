@@ -617,13 +617,13 @@ st.markdown("Data science is a hot job market right now. The Bureau of Labor Sta
 st.markdown("**About the Data**")
 st.markdown("This project uses data science job posting data. The data was webscraped from different job listing websites. Two searches were perfomed, one for Washington, DC and another for the rest of the United States. Therefore Washington, DC and its surrounding areas are over represnted in this data.")
 st.markdown("***")
-st.markdown("Figure 1 shows that the number one data science related job in terms of number of job postings is Machine Learning Engineer. Followed closely by Data Scientist and Data Analyst. Deep Learning Engineers and Blockchain Engineers are also common Job postings, all other job postings have fewer than 14 total posts.")
+st.markdown("The number one data science related job in terms of number of job postings is Machine Learning Engineer. Followed closely by Data Scientist and Data Analyst. Deep Learning Engineers and Blockchain Engineers are also common job postings, all other job postings have fewer than 14 total posts, in this dataset.")
 st.plotly_chart(fig1, use_container_width=True)
 st.markdown("**_Figure 1_**: An overview of the top 5 job titles for data science roles. Hovering over each category shows the exact number of job postings for that job title.")
 ######################## Figure 2 ########################
 
 st.markdown("***")
-st.markdown("Due to the nature of the data collection, Washington DC has the greatest number of job postings, followed by New York and San Francisco. This backs up the general understanding that tech roles are located in big cities and primarily in tech hubs such as New York and San Francisco.")
+st.markdown("Another important aspect of the job market is where the jobs are located.Due to the nature of the data collection, Washington DC has the greatest number of job postings, followed by New York and San Francisco. This backs up the general understanding that tech roles are located in big cities and primarily in tech hubs such as New York and San Francisco.")
 st.plotly_chart(fig2, use_container_width=True)
 st.markdown("**_Figure 2_**: An overview of the top 10 cities with the greatest number of job postings. Washington, DC and its surrounding areas are over represented due to the data collection")
 
@@ -677,7 +677,7 @@ st.markdown("**_Figure 6_**: The top 5 job titles and the recruiting sites the j
 ######################## Figure 5 ########################
 
 st.markdown("***")
-st.markdown("Since the pandemic many more jobs have become work from home or hybrid. Many candidates may value this as an important aspect of their job. Candidates who want to work from home are more likely to find those jobs Machine Learning and Blockchain Engineers than the other job positions. However, even with the post pandemic shift in working style, the vast majority of jobs are still in-person. This may be a reflection of the recent push by CEO's to get employees back to the office, and therefore most new hires are in person roles.")
+st.markdown("Since the pandemic many jobs have become work from home or hybrid. Many candidates may value this as an important aspect of their job. Candidates who want to work from home are more likely to find that in Machine Learning and Blockchain Engineering jobs than the other job positions. However, even with the post pandemic shift in working style, the vast majority of jobs are still in-person. This may be a reflection of the recent push by CEO's to get employees back to the office, and therefore most new hires are in person roles.")
 st.plotly_chart(fig5, use_container_width=True)
 st.markdown("**_Figure 7_**: This figure shows the percentage of jobs that are work from home for each of the top 5 job titles.")
 ######################## Figure 6 ########################
