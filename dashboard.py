@@ -246,11 +246,11 @@ def popup_table(i):
     return html
 
 loc_dict = {}
-loc_dict["Washington, DC"] = [39,-75]
-loc_dict["USA"] = [40,-75]
+loc_dict["Washington, DC"] = [39,-76]
+loc_dict["USA"] = [40,-70]
 loc_dict["New York, NY"] = [40.75,-73]
-loc_dict["Boston, MA"] = [42.5,-69]
-loc_dict["San Francisco, CA"] = [37.75,-120]
+loc_dict["Boston, MA"] = [42.5,-70]
+loc_dict["San Francisco, CA"] = [37.75,-121]
 
 
 
