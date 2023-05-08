@@ -184,18 +184,75 @@ fig3.update_xaxes(tickangle=30)
 
 ######################################## Plot 4 ########################################
 
+df_group = df.groupby("location").count()
+df_cities = pd.DataFrame()
+df_group.reset_index(inplace=True)
+df_cities["city"] = df_group["location"]
+df_cities["num_jobs"] = df_group["job_title"]
+i = 0
+df_cities["top_company"] = ""
+df_cities["top_job_title"] = ""
+for city in df_cities["city"]:
+    df_cities["top_company"].iloc[i] = df[df["location"]==city]["company_name"].value_counts().reset_index()["index"].iloc[0]
+    df_cities["top_job_title"].iloc[i] = df[df["location"]==city]["clean_job_title"].value_counts().reset_index()["index"].iloc[0]
+    i += 1
+df_cities = df_cities.merge(df[["location_coord", "location"]], left_on = "city", right_on = "location")
 # filter data to remove USA as location
-df_reduce = df[df["location"] != "United States"]
-df_reduce = df_reduce.dropna(subset=["location_coord"])
+df_cities = df_cities[df["location"] != "United States"]
+df_cities = df_cities.dropna(subset=["location_coord"])
 
 # change coordinates from string to floats
-heat_data = [eval(x) for x in df_reduce["location_coord"]]
+df_cities["location_coord"] = [eval(x) for x in df_cities["location_coord"]]
 
-# define Folium map centered on the US
-m = folium.Map(location=[40, -65], zoom_start=4)
+def popup_table(i):
+    # Define variables needed
+    location = df_cities["city"].iloc[i]
+    number_of_jobs = df_cities["num_jobs"].iloc[i]
+    company = df_cities["top_company"].iloc[i]
+    job_title = df_cities["top_job_title"].iloc[i]
+    # Define html that combines a table to information next to the bar chart for each county
+    html =""" <!DOCTYPE html>
+<html>
+<head>
+<h4>{}</h4>""".format(location) + """
+</head>
+<body>
+<table>
+<tr>
+<td>
+<table style="width: 250px;color: black;">
+<tbody>
+<tr>
+<th style="background-color: #CCCCCC" ;"><span style="color: black;">Number of Job Postings</span>
+</td>
+<td style="width: 75px;text-align: center;background-color: #CCCCCC" ;">{}</td>""".format(number_of_jobs) + """
+</tr>
+<tr>
+<th style="background-color: #e3e3e3" ;"><span style="color: black;">Top Company</span></td>
+<td style="width: 75px;text-align: center;background-color: #e3e3e3" ;">{}</td>""".format(company) + """
+</tr>
+<tr>
+<th style="background-color: #CCCCCC" ;"><span style="color: black">Top Job Title</span></td>
+<td style="width: 75px;text-align: center;background-color: #CCCCCC" ;">{}</td>""".format(job_title) + """
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+"""
+    return html
 
-# add heatmap layer to folium map
-HeatMap(heat_data, radius=15).add_to(m)
+loc_dict = {}
+loc_dict["Washington, DC"] = [39,-75]
+loc_dict["USA"] = [40,-75]
+loc_dict["New York, NY"] = [40.75,-73]
+loc_dict["Boston, MA"] = [42.5,-69]
+loc_dict["San Francisco, CA"] = [37.75,-120]
+
+
 
 ######################################## Plot 5 ########################################
 
@@ -566,7 +623,28 @@ st.plotly_chart(fig2, use_container_width=True)
 
 
 st.markdown("***")
-st_folium(m, width=1400, height=400)
+selection = st.selectbox(label = "Select a Location", options = ["USA", "Washington, DC", "New York, NY", "Boston, MA", "San Francisco, CA"])
+zoom = 9
+if selection == "USA":
+    zoom = 4
+# Initialize Folium Map centered on USA
+fig = folium.Map(location=loc_dict[selection], tiles="OpenStreetMap", zoom_start=zoom)
+# Define empty datagroup 
+data_group = folium.FeatureGroup(name='Data')
+
+# for each observation (bubble on plot)
+for i in range(0, len(df_cities)):
+    html = popup_table(i) # run html function defined above to get html output for that county
+    data_group.add_child(folium.Marker( # add bubble plot
+        location=df_cities["location_coord"].iloc[i], # set bubble at longitude and latitude
+        popup= folium.Popup(folium.Html(html, script = True)), # add html output to folium popup
+        fill=True,
+        weight=3,
+        opacity=1,
+        fillopacity=0.9,
+        ))
+fig.add_child(data_group) # add datagroup to figure
+st_folium(fig, width=1400, height=400)
 
 ######################## Figure 7 ########################
 
