@@ -614,7 +614,7 @@ with kpi3:
 ######################## Figure 1 ########################
 st.markdown("**Introduction**")
 st.markdown("Data science is a hot job market right now. The Bureau of Labor Statistics (BLS) estimates that the demand for data scientists will grow 36% between 2021 and 2031, making it one of the best careers to be in. With nearly 14,000 job openings per year, it can be a difficult market to navigate for data science professionals. Additionally, data science is a broad career, with many subfields. Machine learning, data analysts, and cloud engineers all share similar “data science” skills but perform different day to day duties. This analysis will give an overview of the data science job market and furthermore give insights into the qualifications and skills needed for data scientists in today's job market. ")
-st.markdown("**About the Data:**")
+st.markdown("**About the Data**")
 st.markdown("This project uses data science job posting data. The data was webscraped from different job listing websites. Two searches were perfomed, one for Washington, DC and another for the rest of the United States. Therefore Washington, DC and its surrounding areas are over represnted in this data.")
 st.markdown("***")
 st.markdown("Figure 1 shows that the number one data science related job in terms of number of job postings is Machine Learning Engineer. Followed closely by Data Scientist and Data Analyst. Deep Learning Engineers and Blockchain Engineers are also common Job postings, all other job postings have fewer than 14 total posts.")
@@ -623,13 +623,13 @@ st.markdown("**_Figure 1_**: An overview of the top 5 job titles for data scienc
 ######################## Figure 2 ########################
 
 st.markdown("***")
-st.markdown("Figure 2 shows the cities where the greatest number of job postings are located. Due to the nature of the data collection Washington DC, is number one, followed by New York and San Francisco.")
+st.markdown("Due to the nature of the data collection, Washington DC has the greatest number of job postings, followed by New York and San Francisco. This backs up the general understanding that tech roles are located in big cities and primarily in tech hubs such as New York and San Francisco.")
 st.plotly_chart(fig2, use_container_width=True)
 st.markdown("**_Figure 2_**: An overview of the top 10 cities with the greatest number of job postings. Washington, DC and its surrounding areas are over represented due to the data collection")
 
 
 st.markdown("***")
-st.markdown("Figure 3 gives an indepth view of where the jobs are located in the United States. By clicking on icons for certain cities you can unveil lots of information about the job market in those cities. For example in DC there are 33 open jobs, and the top job title is Data Analyst while in San Francisco the top job title in Machine Learning Engineer. This allows candidates to get a better understanding of what jobs are availible in the city they are located in.")
+st.markdown("Not everyone can just move to a tech hub to land a data science job. Figure 3 provides an indepth view of where the jobs are located in the United States. By clicking on icons for certain cities you can unveil lots of information about the job market in those cities. For example in DC there are 33 open jobs, and the top job title is Data Analyst while in San Francisco the top job title in Machine Learning Engineer. This allows candidates to get a better understanding of what jobs are availible in the city they are located in.")
 selection = st.selectbox(label = "Select a Location", options = ["USA", "Washington, DC", "New York, NY", "Boston, MA", "San Francisco, CA"])
 zoom = 9
 if selection == "USA":
@@ -664,7 +664,7 @@ st.markdown("**_Figure 4_**: The total number of job postings for each job title
 ######################## Figure 9 ########################
 
 st.markdown("***")
-st.markdown("Top companies also differ in the types of jobs that they offer. Apple, Booz Allen Hamilton, and Deloitte all desire Machine Learning Engineers while Walmart needs more Data Analysts. Apple also needs deep learning engineers, but no data scientists while Booz Allen Hamilton and Deloitte need Data Scientists and Analysts but no Deep Learning Engineers. This backs up the finding from figure 4 that more tech based companies (Apple) desire more tech based roles such as Machine Learning/Deep Learning engineers while non-tech companies like Walmart need more data scientists and data analysts.")
+st.markdown("Top companies also differ in the types of jobs that they offer. Apple, Booz Allen Hamilton, and Deloitte all desire Machine Learning Engineers while Walmart needs more Data Analysts. Apple also needs deep learning engineers, but no data scientists while Booz Allen Hamilton and Deloitte need Data Scientists and Analysts but no Deep Learning Engineers. This backs up the finding from figure 4 that tech based companies (Apple) desire more tech based roles such as Machine Learning/Deep Learning engineers while non-tech companies like Walmart need more data scientists and data analysts.")
 st.plotly_chart(fig9, use_container_width=True)
 st.markdown("**_Figure 5_**: This figure shows the 4 companies with the most job postings and type of job titles they offer. Clicking on a company will filter the plot to only show that company.")
 
@@ -711,10 +711,18 @@ st.markdown('**_Figure 9_**: A wordcloud showing the most common words used in t
 ######################## Figure 8 ########################
 
 st.markdown("***")
-st.markdown("Figure 9 showed many of the most desirable skills for data science positions. However, different job titles will require different skills. In figure 10 this difference is highlighted. Python for example is required by more than 50% of Data science, deep learning, and machine learning jobs but only a quarter of data analyst and blockchain engineering jobs require it. Pytorch, a popular deep learning library is desired only in Deep Learning and Machine Learning roles. Management is only really required for data anlysts. Clearly there are significant differences in the required skills and background of different roles and candidates should strive to gain the skills for the specific job title they want to have.")
+st.markdown("Figure 9 showed many of the most desirable skills for data science positions. However, different job titles will require different skills. In figure 10 this difference is highlighted. Python for example is required by more than 50% of Data science, deep learning, and machine learning jobs but only a quarter of data analyst and blockchain engineering jobs require it. Pytorch, a popular deep learning library, is desired only in Deep Learning and Machine Learning roles. Management is only really required for data anlysts. Clearly there are significant differences in the required skills and background of different roles and candidates should strive to gain the skills for the specific job title they want to have.")
 st.plotly_chart(fig8, use_container_width=True)
 
 st.markdown("**_Figure 10_**: This figure shows the percentage of job postings requiring each skill accross the top 5 job titles. Hovering over each block will show the exact percentage of jobs requiring that skill.")
 
 st.markdown("***")
-st.markdown("Conclusion")
+st.markdown("**Conclusions**")
+st.markdown("An overview of the data science job market revealed the following insights")
+st.markdown("**1.** Data Science Jobs are located in major cities, specifically tech hubs")
+st.markdown("**2.** Tech focused cities (SF, NY) have more Machine Learning and Deep Learning Jobs, while other cities have more Data Scientist and Data Analyst jobs.")
+st.markdown("**3.** Tech companies have more Machine Learning and Deep Learning Jobs compared to non-tech Fortune 500 companies.")
+st.markdown("**4.** Certain Job titles are more common on different recruiting sites. ZipRecruiter has jobs from all job titles.")
+st.markdown("**5.** Different Job titles have very different skill and education requirements. More technical positions like Machine Learning Engineers require more education and more technical skills. Data Analysts need more soft skills like communication and management" )
+
+st.markdown("The data science field is very large and there are plenty of opportunities available. However, it can still be difficult to break into the field. This analysis gives a roadmap to candidates to optimize their job search given their location and experience.")
