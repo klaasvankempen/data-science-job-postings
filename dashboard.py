@@ -612,17 +612,24 @@ with kpi3:
     st.markdown(lnk + htmlstr, unsafe_allow_html=True)
 
 ######################## Figure 1 ########################
-
+st.markdown("**Introduction**")
+st.markdown("Data science is a hot job market right now. The Bureau of Labor Statistics (BLS) estimates that the demand for data scientists will grow 36% between 2021 and 2031, making it one of the best careers to be in. With nearly 14,000 job openings per year, it can be a difficult market to navigate for data science professionals. Additionally, data science is a broad career, with many subfields. Machine learning, data analysts, and cloud engineers all share similar “data science” skills but perform different day to day duties. This analysis will give an overview of the data science job market and furthermore give insights into the qualifications and skills needed for data scientists in today's job market. ")
+st.markdown("**About the Data:**")
+st.markdown("This project uses data science job posting data. The data was webscraped from different job listing websites. Two searches were perfomed, one for Washington, DC and another for the rest of the United States. Therefore Washington, DC and its surrounding areas are over represnted in this data.")
 st.markdown("***")
+st.markdown("Figure 1 shows that the number one data science related job in terms of number of job postings is Machine Learning Engineer. Followed closely by Data Scientist and Data Analyst. Deep Learning Engineers and Blockchain Engineers are also common Job postings, all other job postings have fewer than 14 total posts.")
 st.plotly_chart(fig1, use_container_width=True)
-
+st.markdown("**_Figure 1_**: An overview of the top 5 job titles for data science roles. Hovering over each category shows the exact number of job postings for that job title.")
 ######################## Figure 2 ########################
 
 st.markdown("***")
+st.markdown("Figure 2 shows the cities where the greatest number of job postings are located. Due to the nature of the data collection Washington DC, is number one, followed by New York and San Francisco.")
 st.plotly_chart(fig2, use_container_width=True)
+st.markdown("**_Figure 2_**: An overview of the top 10 cities with the greatest number of job postings. Washington, DC and its surrounding areas are over represented due to the data collection")
 
 
 st.markdown("***")
+st.markdown("Figure 3 gives an indepth view of where the jobs are located in the United States. By clicking on icons for certain cities you can unveil lots of information about the job market in those cities. For example in DC there are 33 open jobs, and the top job title is Data Analyst while in San Francisco the top job title in Machine Learning Engineer. This allows candidates to get a better understanding of what jobs are availible in the city they are located in.")
 selection = st.selectbox(label = "Select a Location", options = ["USA", "Washington, DC", "New York, NY", "Boston, MA", "San Francisco, CA"])
 zoom = 9
 if selection == "USA":
@@ -645,36 +652,45 @@ for i in range(0, len(df_cities)):
         ))
 fig.add_child(data_group) # add datagroup to figure
 st_folium(fig, width=1400, height=400)
+st.markdown("**_Figure 3_**: Icons indicate all 157 cities which have data science job postings. Selecting a city from the dropdown will zoom into that city. Aditionally, clicking on each icon will show the number of job postings, the top job title, and the top company in that city.")
 
 ######################## Figure 7 ########################
 
 st.markdown("***")
+st.markdown("Expanding on Figure 3, this tree map gives an indepth look at the types of jobs availbile in the top 10 cities. Machine Learning Engineers are needed more in New York and San Francisco while Data Scientists and Data Analysts are more desired in DC and Chicago. Typically SF and NY have been seen as tech hubs more than DC and Chicago, therefore it makes sense that they desire the higher technical positions such as machine learning, blockchain, and deep learning engineers.")
 st.plotly_chart(fig7, use_container_width=True)
+st.markdown("**_Figure 4_**: The total number of job postings for each job title in the top 10 cities. Size of each block represents the relative number of job postings for that job title/city combination. Hovering over each block will show the number of job postings.")
+
+######################## Figure 9 ########################
+
+st.markdown("***")
+st.markdown("Top companies also differ in the types of jobs that they offer. Apple, Booz Allen Hamilton, and Deloitte all desire Machine Learning Engineers while Walmart needs more Data Analysts. Apple also needs deep learning engineers, but no data scientists while Booz Allen Hamilton and Deloitte need Data Scientists and Analysts but no Deep Learning Engineers. This backs up the finding from figure 4 that more tech based companies (Apple) desire more tech based roles such as Machine Learning/Deep Learning engineers while non-tech companies like Walmart need more data scientists and data analysts.")
+st.plotly_chart(fig9, use_container_width=True)
+st.markdown("**_Figure 5_**: This figure shows the 4 companies with the most job postings and type of job titles they offer. Clicking on a company will filter the plot to only show that company.")
 
 ######################## Figure 3 ########################
 
 st.markdown("***")
+st.markdown("In the previous figures we have examined the locations and job titles of the data science market to give job searchers an oveview of the job market. It is also useful for candiates to know how to best search for jobs which is shown in Figure 6. Machine Learning Engineer jobs are only posted on Zip Recuiter and Angel List. Data Scientists and Data Aanalyst positions are posted mostly on LinkedIn, ZipRecruiter, and Level.")
 st.plotly_chart(fig3, use_container_width=True)
-
-######################## Figure 9 ########################
-
-st.markdown("***")
-st.plotly_chart(fig9, use_container_width=True)
-
+st.markdown("**_Figure 6_**: The top 5 job titles and the recruiting sites the jobs were posted on. The bars represent the percentage of the job postings for each job title that were found on the corresponding job site")
 ######################## Figure 5 ########################
 
 st.markdown("***")
+st.markdown("Since the pandemic many more jobs have become work from home or hybrid. Many candidates may value this as an important aspect of their job. Candidates who want to work from home are more likely to find those jobs Machine Learning and Blockchain Engineers than the other job positions. However, even with the post pandemic shift in working style, the vast majority of jobs are still in-person. This may be a reflection of the recent push by CEO's to get employees back to the office, and therefore most new hires are in person roles.")
 st.plotly_chart(fig5, use_container_width=True)
-
+st.markdown("**_Figure 7_**: This figure shows the percentage of jobs that are work from home for each of the top 5 job titles.")
 ######################## Figure 6 ########################
 
 st.markdown("***")
+st.markdown("Candidates wanting to break into the data science career should also be aware of the education requirements. Most if not all jobs require at least a bachelors degree, however many roles require advanced degrees to even apply. Those with only a Bachelors degree can find jobs in all of the top fields, however they will find the most success in finding data analyst and blockchain engineer positions. Those with advanced degrees will be strong candidates for any role, however they will be specifically desired as Deep Learning and Machine Learning Engineers. These roles are typically require a higher level of mathematics and statistics which is why they often require advanced degrees.")
 st.plotly_chart(fig6, use_container_width=True)
-
+st.markdown("**_Figure 8_**: This figure shows the breakdown of the minimum education required for each of the top 5 job titles. Clicking on a job title will filter the plot to only show job postings of that job title.")
 
 ######################## Figure 9 ########################
 img = Image.open("word_cloud.png")
 st.markdown("***")
+st.markdown("Data Science roles typically require a lot of skills to succeed, both techinical and soft skills. The required qualifications of job roles are good indicators of what companies believe is necessary to be successful in the data science industry. Figure 9 shows that the most important qualifications are 'Machine Learning', 'Python', 'Computer Science', 'Experience', and 'Communication Skills'. Candidates who hope not only find a job but succeed as data scientists should focus on developing these skills. Interestingly, the required qualifications are mostly hard skills, not soft skills. Indicating that just to land a job you may be better off focusing on your hard skills.")
 st.markdown(
     """
 <style>
@@ -689,9 +705,16 @@ st.markdown(
     '<center><p class="small-font"><b>Word Cloud of Required Qualifications</b></p></center>',
     unsafe_allow_html=True,
 )
-st.image(img, caption = "Word Cloud of Required Qualifications")
+st.image(img)
 
+st.markdown('**_Figure 9_**: A wordcloud showing the most common words used in the "Qualifications" section of the job posting')
 ######################## Figure 8 ########################
 
 st.markdown("***")
+st.markdown("Figure 9 showed many of the most desirable skills for data science positions. However, different job titles will require different skills. In figure 10 this difference is highlighted. Python for example is required by more than 50% of Data science, deep learning, and machine learning jobs but only a quarter of data analyst and blockchain engineering jobs require it. Pytorch, a popular deep learning library is desired only in Deep Learning and Machine Learning roles. Management is only really required for data anlysts. Clearly there are significant differences in the required skills and background of different roles and candidates should strive to gain the skills for the specific job title they want to have.")
 st.plotly_chart(fig8, use_container_width=True)
+
+st.markdown("**_Figure 10_**: This figure shows the percentage of job postings requiring each skill accross the top 5 job titles. Hovering over each block will show the exact percentage of jobs requiring that skill.")
+
+st.markdown("***")
+st.markdown("Conclusion")
